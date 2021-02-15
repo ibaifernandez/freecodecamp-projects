@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <title>Command Line Cheatsheet</title>
+</head>
+<html>
+    <body>
+        <h1>Command Line Cheatsheet</h1>
+
+            <br>
+
+            <h2>Home Directory (~)</h2>
+            <p>On MacOS X: /Users/<code>username</code></p>
+            <p>On Ubuntu systems: /home/<code>username</code></p>
+            <p>It is quite common to see a tilde (~) in place of the full path for a home directory.</p>
+            <br>
+        
+            <h2>pwd (Present Working Directory)</h2>
+            <p>It lets you understand where you are at any given time.</p>
+            <p><strong>pwd</strong> will treat <em>symlinked</em> paths as if they were the actual paths.</p>
+            <p>If we want to see the actual physical path, with all of the <em>symlinks</em> resolved, we can use the <strong>-P</strong> flag.</p>
+        
+            <br>
+        
+            <h2>ls: list files and directories</h2>
+            <p>By default, <strong>ls</strong> will operate in the current directory that you’re in.</p>
+            <p><strong>ls</strong> will let you pass a path as an argument to work on, so you cand find out what files are in another directory without leaving your current directory.</p>
+        
+            <h3>Flags</h3>
+            <p><strong>-a</strong>: (<strong>a</strong>ll) -- Shows hidden files</p>
+            <p><strong>-l</strong>: (<strong>l</strong>ong) -- Form listing. The following info will be displayed:</p>
+            <ul>
+                <li>File mode</li>
+                <li>Number of links</li>
+                <li>Owner name</li>
+                <li>Group name</li>
+                <li>Number of bytes in the file</li>
+                <li>Abbreviated month and month day in which file was last modified</li>
+                <li>Hour and minute when file was last modified</li>
+                <li>Pathname</li>
+                <li>We can also see that some paths are followed by -> and another path, which means that these paths are symlinked to the directories that follow the ->.</li>
+            </ul>
+            <p><strong>-h</strong>: (<strong>h</strong>uman) readable sizes</p>
+            <p><strong>-S</strong>: (sort) by <strong>S</strong>ize</p>
+            <p><strong>-t</strong>: sort by last modified <strong>t</strong>ime</p>
+            <p><strong>-r</strong>: <strong>r</strong>everse sort</p>
+            <br>
+        
+            <h2>Links (ln): hard links & symbolic links</h2>
+            <p><strong>ln</strong> creates a hard link between two files by default. Hard links create an identical copy of the linked file on disk that gets updated automatically as the source file gets updated.</p>
+            <code><strong>ln</strong> “source file” “target file”</code>
+            <p><strong>Example:</strong></p>
+            <code>$ ln a.txt b.txt</code>
+            <p>Hard links only work on the current file system. Hard links can’t be created to a file on a different file system. To do that you need to use symbolic links.</p>
+            <p>If the source file gets deleted, the target file will continue to live as an independent file, despite the severed link.</p>
+            <p><strong>-f</strong>: <strong>f</strong>orcing a link -- Overwrites the target link.</p>
+            <br>
+        
+            <h3><strong>-s</strong>: symbolic links</h3>
+            <p>Hard links do not work for directories. To create a link to a directory, we use the <strong>-s</strong> flag to create a symbolic link. This can also be used for linking to files as well, not just directories.</p>
+            <p>Symbolic links can also link to files or directories on other file systems.</p>
+            <p>File timestamps and size are identical with hard links, but they are different for symbolic links.</p>
+            <br>
+        
+            <h2>cd: change directories</h2>
+            <p><code><strong>cd</strong> path to the directory you wish to navigate to</code> -- going into that path.</p>
+            <p><code><strong>cd ..</strong></code> -- navigating up to the parent directory.</p>
+            <p><code><strong>cd [no arguments]</strong></code> -- navigate back to your home directory.</p>
+            <br>
+        
+            <h2>mkdir: create directories</h2>
+            <p><strong>-p</strong>: create intermediate directories.</p>
+            <p><strong>Example:</strong></p>
+            <code>$ mkdir -p a/b/c</code>
+            <p><strong>-v</strong>: verbose output.</p>
+            <p>Adding the <strong>-v</strong> flag will print the results of mkdir to the console.</p>
+            <br>
+        
+            <h2>cp: copying files</h2>
+            <h3><strong>Copying a single file:</strong></h3>
+            <code><strong>cp</strong> source file target file/directory</code>
+            <p>If a directory is specified, then the original file name of the source file will be used to create the new file in the target directory.</p>
+            <h3>Copying multiple files:</h3>
+            <p>In this case, the last argument must be a directory, and the original file names of the source files will be used as the names of the new files in the target directory.</p>
+            <p><strong>Example:</strong></p>
+            <code>$ cp a.txt b.txt foo</code>
+            <p><strong>Wildcard:</strong>
+            <code>*</code> (all) -- It will copy it all.</p>
+            <p><strong>Example:</strong></p>
+            <code>$ cp *.txt foo</code>
+            <p><strong>-v</strong>: verbose output.</p>
+            <p><strong>-R</strong>: copying directories (recursively)</p>
+            <p><strong>Example:</strong></p>
+            <code>$ cp -Rv foo bar</code>
+            <p><strong>Meaning</strong>: copy recursively and <em>verbose</em> all the content from source directory <code>foo</code> to target directory <code>bar</code></p>
+            <p><strong>-f</strong>: force overwriting of a file.</p>
+            <p><strong>-i</strong>: confirm overwriting of a file.</p>
+            <p>When you are about to copy over several files at once, and some of the target files already exist, it may be beneficial to confirm that you do in fact want to copy the source file and replace the target file.</p>
+            <p><strong>Example:</strong></p>
+            <code>$ cp -i a.txt b.txt</code>
+            <p><strong>Result:</strong></p>
+            <code>overwrite b.txt? (y/n [n])</code>
+            <p>A response of <code>y</code> will overwrite the file. A response of <code>n</code> will skip the file and move on to the next copy, if there is one.</p>
+            <br>
+        
+            <h2>rm: deleting files</h2>
+            <p>It supports the same flags and arguments as <code>cp</code>.</p>
+            <p><strong>Example:</strong></p>
+            <code>$ rm -v a.txt</code>
+            <br>
+       
+            <h2>mv: moving files</h2>
+            <p>Almost identical behaviour to copying files <code>cp</code> to that of copying files.</p>
+            <p><code>mv</code> supports the same flags as <code>cp</code>.</p>
+            <p><code>mv</code> is really just a combination of <code>cp</code> and <code>rm</code> to achieve the desired outcome of moving a file from one location to another.</p>
+            <p>Using <code>cp</code> + <code>rm</code> can be useful when trying to move a file across file systems as the mv command doesn’t support that.</p>
+            <br>
+        
+            <h2>Input/Output (|, >)</h2>
+            <h3>Redirecting Output - The "<em>pipe</em>" operator (<code>|</code>)</h3>
+            <p>We can chain together any number of commands using the “<em>pipe</em>” (<code>|</code>) operator.</p>
+            <h3>Writing to a File (<code>></code>)</h3>
+            <p>In addition to redirecting the output and sending it to another process, we can write  the output from one process to a file using the <code>></code> operator.</p>
+            <h3>Reading from a File (<code><</code>)</h3>
+            <p>If we want to read data from a file, we can use <code><</code>.</p>
+
+    </body>
+</html>
