@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Git Instructions</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Git Instructions</h1>
+        <br>
+        <h2>Copying a repository on local</h2>
+        <ol>
+        <li>To copy this repository onto your local machine, select the SSH option and copy the line next to it.</li>
+        <li>At local command line, navigate to the storage targetof the project</li>
+        <li>Clone your GitHub repository onto local:
+            <code>git clone</code> followed by the URL copied from GitHub
+            <p><strong>Example:</strong></p>
+            <code>git clone git@github.com:USER-NAME/REPOSITORY-NAME.git.</code>
+        </li>
+        </ol>
+        <br>
+        
+        <h2>Git Workflow</h2>
+        <br>
+
+        <h3>Create a file</h3>
+        <code>touch FILE_NAME.FILE_EXTENSION</code>
+        <p><strong>Example:</strong></p>
+        <code>touch index.html</code>
+        <br><br>
+        
+        
+        <h3>Check the status</h3>
+        <code>git status</code>
+        <ol>
+            <li>A <span style="color:red;"><strong>red</strong></span> results means that the file is not <strong>staged</strong> yet.</li>
+            <li>A <span style="color:green;"><strong>green</strong></span> results means that the file has been <strong>staged</strong>.</li>
+        </ol>
+        <br>
+        
+        <h3>Adding to the stage list</h3>
+        <ol>
+            <li><em>Staging</em> a specific file:
+                <code>git add FILE_NAME.FILE_EXTENSION</code>
+                <p><strong>Example:</strong></p>
+                <code>git add index.html</code>
+            </li>
+            <li><em>Staging</em> all <em>non-staged</em> files:
+                <code>git add .</code>
+            </li>
+            <p>For more information on the <code>git add</code> command, <a href="http://git-scm.com/docs/git-add" target="_blank">visit the official guide</a>.</p>
+        </ol>
+        <br>
+        
+        <h3>Commiting a file</h3>
+        <code>git commit -m "<em>explanatory message</em>"</code> 
+        <br><br><br>
+        
+        <h3>Check Git log</h3>
+        <code>git log</code>
+        <br><br><br>
+
+        <h3>Push Your Work to GitHub</h3>
+        <code>git push origin main</code>
+</body>
+</html>
