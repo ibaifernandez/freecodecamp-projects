@@ -29,6 +29,164 @@
                     <li><code>id</code>s attributes should be unique. Don't give more than one element the same <code>id</code> attribute.</li><br>
                     <li><code>id</code>s have <strong>higher specificity</strong> than a <code>class</code>; thus, if conflicting styles result from both <code>class</code> and <code>id</code> applied to the same element, the styles of the <code>id</code> will prevail.</li>
                 </ol>
+            <br>
+
+            <h2>Other CSS Selectors</h2>
+            <p>The form <code>[attr=value]</code> can be used as another type of CSS selector. It matches and styles elements with a specific <code>attribute=value</code> pair.</p>
+            <p>For example:</p>
+            <p><code>[type='radio']</code> will affect to all elements with the <strong>attribute </strong><code>type</code> which have a <strong>value</strong> of <code>radio</code>, as it could be:</p>
+            <code>&ltlabel>&lt;input <strong>type="radio"</strong> name="indoor-outdoor"> Outdoor&lt;/label></code>
+            <br><br>
+
+            <h2>Relative Units: <code>em</code> & <code>rem</code></h2>
+            <ol>
+                <li><code>em</code> is relative to the size of its parent's font-size.</li><br>
+                <li><code>rem</code> is relative to the root -- this is to the <code>html</code> tag.</li>
+            </ol>
+            <br>
+
+            <h2>CSS Variables</h2>
+            <code>selector {<br>--custom_property_name: CSS value;<br>}</code>
+            <p><strong>Example:</strong></p>
+            <code>.variables {<br>--main-bg-color: red;<br>}</code>
+            <p><strong>Application:</strong></p>
+            <code>element {<br>CSS property: var(--custom_property_name);<br>}</code>
+            <p><strong>Example:</strong></p>
+            <code>h2 {<br>background-color: var(--main-bg-color);<br>}</code>
+            <br><br>
+            <h3>CSS Variables -- Notes & Best Practices</h3>
+            <p>To define custom properties on the <code>:root</code> <strong>pseudo-class</strong>, so that it can be applied globally across your HTML document.</p>
+            <p>Custom property names are <strong>case sensitive</strong></p>
+            <br>
+
+            <h3>CSS Variables -- Fallbacks</h3>
+            <ol>
+                <li>Multiple fallback values can be defined within the <code>var()</code> function.</li><br>
+                <li>Fallback values aren't used to fix the browser compatibility. If the browser doesn't support CSS custom Properties, the fallback value won't help.</li><br>
+                <li>Thus, It's just a backup for the browser which supports CSS Custom Properties to choose a different value if the given variable isn't defined or has an invalid value.</li>
+            </ol>
+            <h4>How did CSS Variables Fallbacks Works?</h4>
+            <code>var(custom_property_name, fallback value)</code>
+            <p>The function only accepts two parameters, but they can be chained as follows:</p>
+            <code>selector {<br>background-color: var(--my-var, var(--my-background, pink));<br>}</code>
+            <br><br>
+
+            <h2>Improving Compatibility with Browser Fallbacks</h2>
+            <p>Another way to improve browser compatibility is to declare another more widely supported value immediately before.</p>
+            <p>Basically, instead of...</p>
+            <code>element {<br>background: var(--my-variable, black)<br>}</code>
+            <p>...we could use...</p>
+            <code>element {<br>background: black;<br>background: var(--my-variable)<br>}</code>
+            
+            <h2>Media Queries</h2>
+            <br>
+
+            <h2>CSS Properties: <code>box-shadow</code></h2>
+            <p>The box-shadow property applies one <strong>or more</strong> shadows to an element.</p>
+            <h3>Values of the <code>box-shadow</code>property</h3>
+            <ol>
+                <li><code>offset-x</code>: how far to push the shadow horizontally from the element.</li>
+                <li><code>offset-y</code>: how far to push the shadow vertically from the element.</li>
+                <li><code>blur-radius</code>: optional</li>
+                <li><code>spread-radius</code>: optional</li>
+                <li><code>color</code></li>
+            </ol>
+            <p>Multiple box-shadows can be created by using commas to separate properties of each box-shadow.</p>
+            <p><strong>Example:</strong></p>
+            <code>element {<br>box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)<br>};</code>
+            <br>
+
+            <h2>CSS Box Model and relative positions</h2>
+            <p><strong>CSS Box Model</strong>: the treatment that each HTML element receive as if they were boxes.</p>
+            <p><strong>Block-level</strong> items automatically start on a new line:</p>
+                <ol>
+                    <li>Headings</li>
+                    <li>Paragraphs</li>
+                    <li>Divs</li>
+                </ol>
+                <p>When the position of an element is set to <strong><code>relative</code></strong>, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page.</p>
+                <p>It pairs with the <strong>CSS offset</strong>, which say how much to move the item away from its normal position.</p>
+                <p><strong>CSS Offset</strong> properties are:</p>
+                <ul>
+                    <li><code>left</code></li>
+                    <li><code>right</code></li>
+                    <li><code>bottom</code></li>
+                    <li><code>top</code></li>
+                </ul>
+                <p>Changing an element's position to <code>relative</code> does not remove it from the <strong>normal flow</strong>; this is, other elements around it still behave as if that item were in its default position.</p>
+                <p>No matter the position of elements, the underlying HTML markup should be organized and make sense when read from top to bottom. This is how users with visual impairments (who rely on assistive devices like screen readers) access your content.</p>
+                <br>
+
+                <h2>Color Gradients</h2>
+                <p>Gradients can be used in CSS as it follows:</p>
+                <code>background: linear-gradient(direction_of_gradient, color_1, color2...);</code>
+                </p><strong>Example:</strong></p>
+                <code>background: linear-gradient(45deg, red, yellow);</code>
+                <p><strong>Result:</strong></p>
+                <div style="width:100px; height:100px; background: linear-gradient(45deg, red, yellow);"></div>
+                <br>
+                
+                <h2>Repeated Color Gradients</h2>
+                <p><code>repeating-linear-gradients</code> repeats the specified gradient pattern as many times as it fits into the container where it is set.</p>
+                <p><strong>Example:</strong></p>
+                <code>repeating-linear-gradient(<br>
+                    45deg,<br>
+                    blue 0px,<br>
+                    yellow 20px,<br>
+                    green 60px,<br>
+                    red 100px,<br>
+                    blue 160px<br>
+                  );<br>
+                }</code>
+                <p><strong>Result:</strong></p>
+                <div style="width:400px; height:400px;background:repeating-linear-gradient(45deg,blue 0px, yellow 20px, green 60px, red 100px, blue 140px);"></div>
+                <br>
+
+                <p>With <code>repeating-linear-gradients</code>, flat stripes can be achieved</p>
+                <p><strong>Example:</strong></p>
+                <code>repeating-linear-gradient(<br>
+                    45deg,<br>
+                    red 0px,<br>
+                    red 40px,<br>
+                    yellow 40px,<br>
+                    yellow 80px<br>
+                  );<br>
+                }</code>
+                <p><strong>Result:</strong></p>
+                <div style="border-radius: 25px; width:400px; height:400px;background:repeating-linear-gradient(45deg,red 0px, red 40px, yellow 40px, yellow 80px);"></div>
+                <br>
+
+                <h2>CSS - Transform</h2>
+                <p><code>transform</code> is a CSS property that will work with certain functions (useful when using <code>:hover</code>) such as:</p>
+                    <ol>
+                        <li><code>scale(<em>num</em>)</code>: to scale elements.
+                        <p>Example:</p>
+                    <style>
+                        .button1 {font-weight: 600; color: white; background-color:red}
+                        .button1:hover {color: white; background-color:red; transform: scale(1.1);}
+                    </style>
+                        <button class="button1" style="padding:25px;">Look up!</button>
+                        <br><br><br>
+                        
+                        <li><code>skewX(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the X-axis. It accepts negative values.</li>
+                        <p><strong>Example:</strong><code> .button2:hover {color: white; background-color:red; transform: skewX(15deg);}                        </code></p>
+                        <style>
+                            .button2 {font-weight: 600; color: white; background-color:red}
+                            .button2:hover {color: white; background-color:red; transform: skewX(15deg);}
+                        </style>
+                            <button class="button2" style="padding:25px;">Look up!</button>
+                            <br><br><br>
+
+                        <li><code>skewY(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the Y-axis. It accepts negative values.</li>
+                        <p><strong>Example:</strong><code> .button3:hover {color: white; background-color:red; transform: skewY(-10deg);}</code></p>
+                        <style>
+                            .button3 {font-weight: 600; color: white; background-color:red}
+                            .button3:hover {color: white; background-color:red; transform: skewY(-10deg);}
+                        </style>
+                            <button class="button3" style="padding:25px;">Look up!</button>
+                            <br><br><br>
+                    </ol>
+
         </main>
     </body>
 </html>
