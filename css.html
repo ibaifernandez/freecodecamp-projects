@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML notes</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>CSS notes</h1>
+        </header>
+        <main>
+            <h2>Import fonts from Google</h2>
+            <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p>
+            <code>&lt;link href="https://fonts.googleapis.com/css?family=<em>FAMILY_NAME</em>" rel="stylesheet" type="text/css"></code>
+            <p>Now, the new <code><em>FAMILY_NAME</em></code> font can be used.</p>
+            <p>Family names are <strong>case-sensitive</strong> and need to be <strong>wrapped in quotes</strong> if there is a space in the name.</p>
+            <p><strong>Generic</strong> font family names are not <strong>case-sensitive</strong>and <strong>do not need quotes</strong> because they are CSS keywords.</p>
+            <br>
+
+            <h3>Fallback fonts</h3>
+            <p>When writing CSS rules for font families, we can set the <strong>fallback</strong> fonts. To do that, do as it follows:</p>
+            <code>font-family: FAMILY_NAME, GENERIC_NAME;</code>
+            <p>This way, in case that <code>FAMILY_NAME</code> can't be reached for whichever reasons, the <code>GENERIC_NAME</code>will substitute the <code>FAMILY_NAME</code></p>
+            <br>
+            
+            <h2><code>ID</code>'s importance & best practices</h2>
+                <ol>
+                    <li>Can be used to select and modify specific elements with JavaScript.</li><br>
+                    <li><code>id</code>s attributes should be unique. Don't give more than one element the same <code>id</code> attribute.</li><br>
+                    <li><code>id</code>s have <strong>higher specificity</strong> than a <code>class</code>; thus, if conflicting styles result from both <code>class</code> and <code>id</code> applied to the same element, the styles of the <code>id</code> will prevail.</li>
+                </ol>
+        </main>
+    </body>
+</html>
