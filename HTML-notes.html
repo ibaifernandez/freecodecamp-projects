@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML notes</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>HTML notes</h1>
+            </header>
+
+            <h2>Commenting HTML</h2>
+            <p>In order to comment HTML, <code>&lt;!--***--&gt;</code> is used -- where <code>***</code> is the comment itself.</p>
+            <br>
+            <h2>ALT attribute for images -- best practices</h2>
+            <p>If the image is <strong>purely decorative</strong>, using an <strong>empty <code>alt</code> attribute</strong> is a best practice.</p>
+            <p>Ideally the <code>alt</code> attribute should not contain <strong>special characters</strong> unless needed.</p>
+            <br>
+
+            <h2>Forms -- best practices</h2>
+            <ol>
+                <li>It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the <code>label</code> and the child <code>input</code> element. For example:</li><br>
+            
+                <code>
+                    &lt;label for="color">Favorite color?<br> 
+                    &nbsp;&nbsp;&lt;input id="color" type="radio" name="colors">Black<br> 
+                    &nbsp;&nbsp;&lt;input id="color" type="radio" name="colors">White<br>
+                &lt;/label>
+                </code>
+            
+                <p><strong>Result:</strong></p>
+                <div style="border: 2px solid black; margin: 10px 0px; padding: 10px;"">
+                    <label for="color" style="font-weight: 600;">Favorite color?<br><br>
+                        <input id="color" type="radio" name="colors">Black
+                        <input id="color" type="radio" name="colors">White
+                    </label>
+                </div>
+                <br>
+
+                <li>Inputs of <code>type="radio"</code> and <code>type="checkbox"</code> report their values from the <code>value</code> attribute in the form: <code>name=value</code>. For example:</li><br>
+                <code>
+                    &lt;label for="color">Favorite color?<br> 
+                    &nbsp;&nbsp;&lt;input id="color" type="radio" name="colors" value="black">Black<br> 
+                    &nbsp;&nbsp;&lt;input id="color" type="radio" name="colors" value="white">White<br>
+                &lt;/label>
+                </code>
+
+                <p><strong>Result:</strong></p>
+                <div style="border: 2px solid black; margin: 10px 0px; padding: 10px;"">
+                    <code>colors:black</code><br><br>or<br><br><code>colors:white</code>
+                </div>
+                <br>
+                <h2>Import fonts from Google</h2>
+                <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p>
+                <code>&lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"></code>
+                <p>Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:</p>
+                    font-family: FAMILY_NAME, GENERIC_NAME;.
+                    
+                    The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.
+                    
+                    Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.</p>
+    
+            </ol>
+        </main>
+    </body>
+    </html>
