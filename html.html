@@ -49,18 +49,21 @@
                 <div style="border: 2px solid black; margin: 10px 0px; padding: 10px;"">
                     <code>colors:black</code><br><br>or<br><br><code>colors:white</code>
                 </div>
-                <br>
-                <h2>Import fonts from Google</h2>
-                <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p>
-                <code>&lt;link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"></code>
-                <p>Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:</p>
-                    font-family: FAMILY_NAME, GENERIC_NAME;.
-                    
-                    The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.
-                    
-                    Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font.</p>
-    
             </ol>
+            <br>
+            
+            <h2>Import fonts from Google</h2>
+            <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p>
+            <code>&lt;link href="https://fonts.googleapis.com/css?family=<em>FAMILY_NAME</em>" rel="stylesheet" type="text/css"></code>
+            <p>Now, the new <code><em>FAMILY_NAME</em></code> font can be used.</p>
+            <p>Family names are <strong>case-sensitive</strong> and need to be <strong>wrapped in quotes</strong> if there is a space in the name.</p>
+            <br>
+                
+            <h3>Fallback fonts</h3>
+            <p>When writing CSS rules for font families, we can set the <strong>fallback</strong> fonts. To do that, do as it follows:</p>
+            <code>font-family: FAMILY_NAME, GENERIC_NAME;</code>
+            <p>This way, in case that <code>FAMILY_NAME</code> can't be reached for whichever reasons, the <code>GENERIC_NAME</code>will substitute the <code>FAMILY_NAME</code>
+            
         </main>
     </body>
     </html>
