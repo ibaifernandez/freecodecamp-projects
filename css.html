@@ -1,22 +1,10 @@
 <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
         <title>HTML notes</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/style-css.css">
     </head>
-    <style>
-        * {
-            margin: 0;
-        }
-        body {
-            margin: 25px 50px;
-            font-size:16px;
-            line-height: 1.5em;
-        }
-        code {
-            background-color: rgba(155,155,155,0.5);
-        }
-    </style>
     <body>
         <header>
             <h1>CSS notes</h1><br>
@@ -48,7 +36,7 @@
             <p>The form <code>[attr=value]</code> can be used as another type of CSS selector. It matches and styles elements with a specific <code>attribute=value</code> pair.</p><br>
             <p>For example:</p><br>
             <p><code>[type='radio']</code> will affect to all elements with the <strong>attribute </strong><code>type</code> which have a <strong>value</strong> of <code>radio</code>, as it could be:</p><br>
-            <code>&ltlabel>&lt;input <strong>type="radio"</strong> name="indoor-outdoor"> Outdoor&lt;/label></code><br>
+            <code>&lt;label>&lt;input <strong>type="radio"</strong> name="indoor-outdoor"> Outdoor&lt;/label></code><br>
             <br><br>
 
             <h2>Relative Units: <code>em</code> & <code>rem</code></h2><br>
@@ -136,7 +124,7 @@
                 <h2>Color Gradients</h2><br>
                 <p>Gradients can be used in CSS as it follows:</p><br>
                 <code>background: linear-gradient(direction_of_gradient, color_1, color2...);</code><br><br>
-                </p><strong>Example:</strong></p><br>
+                <p><strong>Example:</strong></p><br>
                 <code>background: linear-gradient(45deg, red, yellow);</code><br><br>
                 <p><strong>Result:</strong></p><br>
                 <div style="width:100px; height:100px; background: linear-gradient(45deg, red, yellow);"></div><br>
@@ -227,7 +215,7 @@
                     <li>Animations can be used with pseudo-clases such as <code>:hover</code>. For example:<br><br>
                     <code> img:hover {<br>&nbsp;&nbsp;&nbsp;animation-name: width;<br>&nbsp;&nbsp;&nbsp;animation-duration: 500ms;<br>}<br><br>@keyframes width {<br>&nbsp;&nbsp;&nbsp;100% {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 40px;<br>&nbsp;&nbsp;&nbsp;}<br>}</code></li><br>
                     <li>To avoid the animation to reset to an initial state once it is finished, we will use:</li><br>
-                    <code>animation-fill-mode: forwards</code> within the properties of the given selector. For example:<br><br>
+                    <p><code>animation-fill-mode: forwards</code> within the properties of the given selector. For example:</p><br><br>
                     <code>element {<br>&nbsp;&nbsp;&nbsp;animation-name: my-animation-name;<br>&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br>&nbsp;&nbsp;&nbsp;animation-fill-mode: forwards;<br>}</code><br><br>
                     <p>After that, we will use the <code>@keyframes</code> property. For example, here we see a combined use of animation on a <code>:hover</code> pseudo-class and the use of <code>animation-fill-mode: forwards</code>.</p><br>
 
@@ -505,16 +493,8 @@
                                 }
                             }
                         </style>
-                        
                         <div class="moving6">I am moving!</div>
-
-                        <br>
-
-
                 </ul>
-
-
-                </div>
         </main>
     </body>
 </html>
