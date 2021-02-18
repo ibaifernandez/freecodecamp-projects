@@ -14,13 +14,14 @@
             <p>In order to comment HTML, <code>&lt;!--***--&gt;</code> is used -- where <code>***</code> is the comment itself.</p>
             <br>
             <h2>ALT attribute for images -- best practices</h2>
-            <p>If the image is <strong>purely decorative</strong>, using an <strong>empty <code>alt</code> attribute</strong> is a best practice.</p>
+            <p>Per HTML5 specification, <code>alt</code> text is now considered mandatory.</p>
+            <p>Thus, if the image is <strong>purely decorative</strong>, using an <strong>empty <code>alt</code> attribute</strong> is a best practice.</p>
             <p>Ideally the <code>alt</code> attribute should not contain <strong>special characters</strong> unless needed.</p>
             <br>
 
             <h2>Forms -- best practices</h2>
             <ol>
-                <li>It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the <code>label</code> and the child <code>input</code> element. For example:</li><br>
+                <li>It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the <code>label</code> and the child <code>input</code> element. For example:</li>
             
                 <code>
                     &lt;label for="color">Favorite color?<br> 
