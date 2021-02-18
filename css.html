@@ -4,163 +4,179 @@
         <title>HTML notes</title>
         <meta charset="UTF-8">
     </head>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            margin: 25px 50px;
+            font-size:16px;
+            line-height: 1.5em;
+        }
+        code {
+            background-color: rgba(155,155,155,0.5);
+        }
+    </style>
     <body>
         <header>
-            <h1>CSS notes</h1>
+            <h1>CSS notes</h1><br>
         </header>
         <main>
-            <h2>Import fonts from Google</h2>
-            <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p>
-            <code>&lt;link href="https://fonts.googleapis.com/css?family=<em>FAMILY_NAME</em>" rel="stylesheet" type="text/css"></code>
-            <p>Now, the new <code><em>FAMILY_NAME</em></code> font can be used.</p>
-            <p>Family names are <strong>case-sensitive</strong> and need to be <strong>wrapped in quotes</strong> if there is a space in the name.</p>
-            <p><strong>Generic</strong> font family names are not <strong>case-sensitive</strong>and <strong>do not need quotes</strong> because they are CSS keywords.</p>
+            <h2>Import fonts from Google</h2><br>
+            <p>We can import fonts from Google Fonts using the next <code>&lt;link></code> tag just as follows:</p><br>
+            <code>&lt;link href="https://fonts.googleapis.com/css?family=<em>FAMILY_NAME</em>" rel="stylesheet" type="text/css"></code><br><br>
+            <p>Now, the new <code><em>FAMILY_NAME</em></code> font can be used.</p><br>
+            <p>Family names are <strong>case-sensitive</strong> and need to be <strong>wrapped in quotes</strong> if there is a space in the name.</p><br>
+            <p><strong>Generic</strong> font family names are not <strong>case-sensitive</strong>and <strong>do not need quotes</strong> because they are CSS keywords.</p><br>
             <br>
 
-            <h3>Fallback fonts</h3>
-            <p>When writing CSS rules for font families, we can set the <strong>fallback</strong> fonts. To do that, do as it follows:</p>
-            <code>font-family: FAMILY_NAME, GENERIC_NAME;</code>
-            <p>This way, in case that <code>FAMILY_NAME</code> can't be reached for whichever reasons, the <code>GENERIC_NAME</code>will substitute the <code>FAMILY_NAME</code></p>
+            <h3>Fallback fonts</h3><br>
+            <p>When writing CSS rules for font families, we can set the <strong>fallback</strong> fonts. To do that, do as it follows:</p><br>
+            <code>font-family: FAMILY_NAME, GENERIC_NAME;</code><br>
+            <p>This way, in case that <code>FAMILY_NAME</code> can't be reached for whichever reasons, the <code>GENERIC_NAME</code>will substitute the <code>FAMILY_NAME</code></p><br>
             <br>
             
-            <h2><code>ID</code>'s importance & best practices</h2>
+            <h2><code>ID</code>'s importance & best practices</h2><br>
                 <ol>
                     <li>Can be used to select and modify specific elements with JavaScript.</li><br>
                     <li><code>id</code>s attributes should be unique. Don't give more than one element the same <code>id</code> attribute.</li><br>
-                    <li><code>id</code>s have <strong>higher specificity</strong> than a <code>class</code>; thus, if conflicting styles result from both <code>class</code> and <code>id</code> applied to the same element, the styles of the <code>id</code> will prevail.</li>
+                    <li><code>id</code>s have <strong>higher specificity</strong> than a <code>class</code>; thus, if conflicting styles result from both <code>class</code> and <code>id</code> applied to the same element, the styles of the <code>id</code> will prevail.</li><br>
                 </ol>
             <br>
 
-            <h2>Other CSS Selectors</h2>
-            <p>The form <code>[attr=value]</code> can be used as another type of CSS selector. It matches and styles elements with a specific <code>attribute=value</code> pair.</p>
-            <p>For example:</p>
-            <p><code>[type='radio']</code> will affect to all elements with the <strong>attribute </strong><code>type</code> which have a <strong>value</strong> of <code>radio</code>, as it could be:</p>
-            <code>&ltlabel>&lt;input <strong>type="radio"</strong> name="indoor-outdoor"> Outdoor&lt;/label></code>
+            <h2>Other CSS Selectors</h2><br>
+            <p>The form <code>[attr=value]</code> can be used as another type of CSS selector. It matches and styles elements with a specific <code>attribute=value</code> pair.</p><br>
+            <p>For example:</p><br>
+            <p><code>[type='radio']</code> will affect to all elements with the <strong>attribute </strong><code>type</code> which have a <strong>value</strong> of <code>radio</code>, as it could be:</p><br>
+            <code>&ltlabel>&lt;input <strong>type="radio"</strong> name="indoor-outdoor"> Outdoor&lt;/label></code><br>
             <br><br>
 
-            <h2>Relative Units: <code>em</code> & <code>rem</code></h2>
+            <h2>Relative Units: <code>em</code> & <code>rem</code></h2><br>
             <ol>
                 <li><code>em</code> is relative to the size of its parent's font-size.</li><br>
-                <li><code>rem</code> is relative to the root -- this is to the <code>html</code> tag.</li>
+                <li><code>rem</code> is relative to the root -- this is to the <code>html</code> tag.</li><br>
             </ol>
             <br>
 
-            <h2>CSS Variables</h2>
-            <code>selector {<br>--custom_property_name: CSS value;<br>}</code>
-            <p><strong>Example:</strong></p>
-            <code>.variables {<br>--main-bg-color: red;<br>}</code>
-            <p><strong>Application:</strong></p>
-            <code>element {<br>CSS property: var(--custom_property_name);<br>}</code>
-            <p><strong>Example:</strong></p>
-            <code>h2 {<br>background-color: var(--main-bg-color);<br>}</code>
+            <h2>CSS Variables</h2><br>
+            <code>selector {<br>&nbsp;&nbsp;&nbsp;--custom_property_name: CSS value;<br>}</code><br><br>
+            <p><strong>Example:</strong></p><br>
+            <code>.variables {<br>&nbsp;&nbsp;&nbsp;--main-bg-color: red;<br>}</code><br><br>
+            <p><strong>Application:</strong></p><br>
+            <code>element {<br>&nbsp;&nbsp;&nbsp;CSS property: var(--custom_property_name);<br>}</code><br><br>
+            <p><strong>Example:</strong></p><br>
+            <code>h2 {<br>&nbsp;&nbsp;&nbsp;background-color: var(--main-bg-color);<br>}</code><br>
             <br><br>
-            <h3>CSS Variables -- Notes & Best Practices</h3>
-            <p>To define custom properties on the <code>:root</code> <strong>pseudo-class</strong>, so that it can be applied globally across your HTML document.</p>
-            <p>Custom property names are <strong>case sensitive</strong></p>
+            <h3>CSS Variables -- Notes & Best Practices</h3><br>
+            <p>To define custom properties on the <code>:root</code> <strong>pseudo-class</strong>, so that it can be applied globally across your HTML document.</p><br>
+            <p>Custom property names are <strong>case sensitive</strong></p><br>
             <br>
 
-            <h3>CSS Variables -- Fallbacks</h3>
+            <h3>CSS Variables -- Fallbacks</h3><br>
             <ol>
                 <li>Multiple fallback values can be defined within the <code>var()</code> function.</li><br>
                 <li>Fallback values aren't used to fix the browser compatibility. If the browser doesn't support CSS custom Properties, the fallback value won't help.</li><br>
-                <li>Thus, It's just a backup for the browser which supports CSS Custom Properties to choose a different value if the given variable isn't defined or has an invalid value.</li>
+                <li>Thus, It's just a backup for the browser which supports CSS Custom Properties to choose a different value if the given variable isn't defined or has an invalid value.</li><br>
             </ol>
-            <h4>How did CSS Variables Fallbacks Works?</h4>
-            <code>var(custom_property_name, fallback value)</code>
-            <p>The function only accepts two parameters, but they can be chained as follows:</p>
-            <code>selector {<br>background-color: var(--my-var, var(--my-background, pink));<br>}</code>
+            <br>
+
+            <h4>How did CSS Variables Fallbacks Works?</h4><br>
+            <code>var(custom_property_name, fallback value)</code><br><br>
+            <p>The function only accepts two parameters, but they can be chained as follows:</p><br>
+            <code>selector {<br>&nbsp;&nbsp;&nbsp;background-color: var(--my-var, var(--my-background, pink));<br>}</code><br>
             <br><br>
 
-            <h2>Improving Compatibility with Browser Fallbacks</h2>
-            <p>Another way to improve browser compatibility is to declare another more widely supported value immediately before.</p>
-            <p>Basically, instead of...</p>
-            <code>element {<br>background: var(--my-variable, black)<br>}</code>
-            <p>...we could use...</p>
-            <code>element {<br>background: black;<br>background: var(--my-variable)<br>}</code>
-            
-            <h2>Media Queries</h2>
+            <h2>Improving Compatibility with Browser Fallbacks</h2><br>
+            <p>Another way to improve browser compatibility is to declare another more widely supported value immediately before.</p><br>
+            <p>Basically, instead of...</p><br>
+            <code>element {<br>&nbsp;&nbsp;&nbsp;background: var(--my-variable, black)<br>}</code><br><br>
+            <p>...we could use...</p><br>
+            <code>element {<br>&nbsp;&nbsp;&nbsp;background: black;<br>&nbsp;&nbsp;&nbsp;background: var(--my-variable)<br>}</code><br>
             <br>
 
-            <h2>CSS Properties: <code>box-shadow</code></h2>
-            <p>The box-shadow property applies one <strong>or more</strong> shadows to an element.</p>
-            <h3>Values of the <code>box-shadow</code>property</h3>
+            <h2 style="color:red;">Media Queries</h2>
+            <br><br>
+
+            <h2>CSS Properties: <code>box-shadow</code></h2><br>
+            <p>The box-shadow property applies one <strong>or more</strong> shadows to an element.</p><br>
+            <h3>Values of the <code>box-shadow</code>property</h3><br>
             <ol>
-                <li><code>offset-x</code>: how far to push the shadow horizontally from the element.</li>
-                <li><code>offset-y</code>: how far to push the shadow vertically from the element.</li>
-                <li><code>blur-radius</code>: optional</li>
-                <li><code>spread-radius</code>: optional</li>
-                <li><code>color</code></li>
+                <li><code>offset-x</code>: how far to push the shadow horizontally from the element.</li><br>
+                <li><code>offset-y</code>: how far to push the shadow vertically from the element.</li><br>
+                <li><code>blur-radius</code>: optional</li><br>
+                <li><code>spread-radius</code>: optional</li><br>
+                <li><code>color</code></li><br>
             </ol>
-            <p>Multiple box-shadows can be created by using commas to separate properties of each box-shadow.</p>
-            <p><strong>Example:</strong></p>
-            <code>element {<br>box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)<br>};</code>
+            <p>Multiple box-shadows can be created by using commas to separate properties of each box-shadow.</p><br>
+            <p><strong>Example:</strong></p><br>
+            <code>element {<br>&nbsp;&nbsp;&nbsp;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)<br>};</code><br>
             <br>
 
-            <h2>CSS Box Model and relative positions</h2>
-            <p><strong>CSS Box Model</strong>: the treatment that each HTML element receive as if they were boxes.</p>
-            <p><strong>Block-level</strong> items automatically start on a new line:</p>
+            <h2>CSS Box Model and relative positions</h2><br>
+            <p><strong>CSS Box Model</strong>: the treatment that each HTML element receive as if they were boxes.</p><br>
+            <p><strong>Block-level</strong> items automatically start on a new line:</p><br>
                 <ol>
-                    <li>Headings</li>
-                    <li>Paragraphs</li>
-                    <li>Divs</li>
+                    <li>Headings</li><br>
+                    <li>Paragraphs</li><br>
+                    <li>Divs</li><br>
                 </ol>
-                <p>When the position of an element is set to <strong><code>relative</code></strong>, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page.</p>
-                <p>It pairs with the <strong>CSS offset</strong>, which say how much to move the item away from its normal position.</p>
-                <p><strong>CSS Offset</strong> properties are:</p>
+                <p>When the position of an element is set to <strong><code>relative</code></strong>, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page.</p><br>
+                <p>It pairs with the <strong>CSS offset</strong>, which say how much to move the item away from its normal position.</p><br>
+                <p><strong>CSS Offset</strong> properties are:</p><br>
                 <ul>
-                    <li><code>left</code></li>
-                    <li><code>right</code></li>
-                    <li><code>bottom</code></li>
-                    <li><code>top</code></li>
+                    <li><code>left</code></li><br>
+                    <li><code>right</code></li><br>
+                    <li><code>bottom</code></li><br>
+                    <li><code>top</code></li><br>
                 </ul>
-                <p>Changing an element's position to <code>relative</code> does not remove it from the <strong>normal flow</strong>; this is, other elements around it still behave as if that item were in its default position.</p>
-                <p>No matter the position of elements, the underlying HTML markup should be organized and make sense when read from top to bottom. This is how users with visual impairments (who rely on assistive devices like screen readers) access your content.</p>
+                <p>Changing an element's position to <code>relative</code> does not remove it from the <strong>normal flow</strong>; this is, other elements around it still behave as if that item were in its default position.</p><br>
+                <p>No matter the position of elements, the underlying HTML markup should be organized and make sense when read from top to bottom. This is how users with visual impairments (who rely on assistive devices like screen readers) access your content.</p><br>
                 <br>
 
-                <h2>Color Gradients</h2>
-                <p>Gradients can be used in CSS as it follows:</p>
-                <code>background: linear-gradient(direction_of_gradient, color_1, color2...);</code>
-                </p><strong>Example:</strong></p>
-                <code>background: linear-gradient(45deg, red, yellow);</code>
-                <p><strong>Result:</strong></p>
-                <div style="width:100px; height:100px; background: linear-gradient(45deg, red, yellow);"></div>
+                <h2>Color Gradients</h2><br>
+                <p>Gradients can be used in CSS as it follows:</p><br>
+                <code>background: linear-gradient(direction_of_gradient, color_1, color2...);</code><br><br>
+                </p><strong>Example:</strong></p><br>
+                <code>background: linear-gradient(45deg, red, yellow);</code><br><br>
+                <p><strong>Result:</strong></p><br>
+                <div style="width:100px; height:100px; background: linear-gradient(45deg, red, yellow);"></div><br>
                 <br>
                 
-                <h2>Repeated Color Gradients</h2>
-                <p><code>repeating-linear-gradients</code> repeats the specified gradient pattern as many times as it fits into the container where it is set.</p>
-                <p><strong>Example:</strong></p>
+                <h2>Repeated Color Gradients</h2><br>
+                <p><code>repeating-linear-gradients</code> repeats the specified gradient pattern as many times as it fits into the container where it is set.</p><br>
+                <p><strong>Example:</strong></p><br>
                 <code>repeating-linear-gradient(<br>
-                    45deg,<br>
-                    blue 0px,<br>
-                    yellow 20px,<br>
-                    green 60px,<br>
-                    red 100px,<br>
-                    blue 160px<br>
+                    &nbsp;&nbsp;&nbsp;45deg,<br>
+                    &nbsp;&nbsp;&nbsp;blue 0px,<br>
+                    &nbsp;&nbsp;&nbsp;yellow 20px,<br>
+                    &nbsp;&nbsp;&nbsp;green 60px,<br>
+                    &nbsp;&nbsp;&nbsp;red 100px,<br>
+                    &nbsp;&nbsp;&nbsp;blue 160px<br>
                   );<br>
-                }</code>
-                <p><strong>Result:</strong></p>
-                <div style="width:400px; height:400px;background:repeating-linear-gradient(45deg,blue 0px, yellow 20px, green 60px, red 100px, blue 140px);"></div>
+                }</code><br><br>
+                <p><strong>Result:</strong></p><br>
+                <div style="width:400px; height:400px;background:repeating-linear-gradient(45deg,blue 0px, yellow 20px, green 60px, red 100px, blue 140px);"></div><br>
                 <br>
 
-                <p>With <code>repeating-linear-gradients</code>, flat stripes can be achieved</p>
-                <p><strong>Example:</strong></p>
+                <p>With <code>repeating-linear-gradients</code>, flat stripes can be achieved</p><br>
+                <p><strong>Example:</strong></p><br>
                 <code>repeating-linear-gradient(<br>
-                    45deg,<br>
-                    red 0px,<br>
-                    red 40px,<br>
-                    yellow 40px,<br>
-                    yellow 80px<br>
+                    &nbsp;&nbsp;&nbsp;45deg,<br>
+                    &nbsp;&nbsp;&nbsp;red 0px,<br>
+                    &nbsp;&nbsp;&nbsp;red 40px,<br>
+                    &nbsp;&nbsp;&nbsp;yellow 40px,<br>
+                    &nbsp;&nbsp;&nbsp;yellow 80px<br>
                   );<br>
-                }</code>
-                <p><strong>Result:</strong></p>
-                <div style="border-radius: 25px; width:400px; height:400px;background:repeating-linear-gradient(45deg,red 0px, red 40px, yellow 40px, yellow 80px);"></div>
+                }</code><br><br>
+                <p><strong>Result:</strong></p><br>
+                <div style="border-radius: 25px; width:400px; height:400px;background:repeating-linear-gradient(45deg,red 0px, red 40px, yellow 40px, yellow 80px);"></div><br>
                 <br>
 
-                <h2>CSS - Transform</h2>
-                <p><code>transform</code> is a CSS property that will work with certain functions (useful when using <code>:hover</code>) such as:</p>
+                <h2>CSS - Transform</h2><br>
+                <p><code>transform</code> is a CSS property that will work with certain functions (useful when using <code>:hover</code>) such as:</p><br>
                     <ol>
-                        <li><code>scale(<em>num</em>)</code>: to scale elements.
-                        <p>Example:</p>
+                        <li><code>scale(<em>num</em>)</code>: to scale elements.</li><br>
+                        <p>Example:</p><br>
                     <style>
                         .button1 {font-weight: 600; color: white; background-color:red}
                         .button1:hover {color: white; background-color:red; transform: scale(1.1);}
@@ -168,8 +184,8 @@
                         <button class="button1" style="padding:25px;">Look up!</button>
                         <br><br><br>
                         
-                        <li><code>skewX(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the X-axis. It accepts negative values.</li>
-                        <p><strong>Example:</strong><code> .button2:hover {color: white; background-color:red; transform: skewX(15deg);}                        </code></p>
+                        <li><code>skewX(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the X-axis. It accepts negative values.</li><br>
+                        <p><strong>Example:</strong><code> .button2:hover {color: white; background-color:red; transform: skewX(15deg);}</code></p><br>
                         <style>
                             .button2 {font-weight: 600; color: white; background-color:red}
                             .button2:hover {color: white; background-color:red; transform: skewX(15deg);}
@@ -177,8 +193,8 @@
                             <button class="button2" style="padding:25px;">Look up!</button>
                             <br><br><br>
 
-                        <li><code>skewY(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the Y-axis. It accepts negative values.</li>
-                        <p><strong>Example:</strong><code> .button3:hover {color: white; background-color:red; transform: skewY(-10deg);}</code></p>
+                        <li><code>skewY(<em>Ndeg</em>)</code>: it will alter the perspective of the element on the Y-axis. It accepts negative values.</li><br>
+                        <p><strong>Example:</strong><code> .button3:hover {color: white; background-color:red; transform: skewY(-10deg);}</code></p><br>
                         <style>
                             .button3 {font-weight: 600; color: white; background-color:red}
                             .button3:hover {color: white; background-color:red; transform: skewY(-10deg);}
@@ -187,6 +203,318 @@
                             <br><br><br>
                     </ol>
 
+                    <h2>Drawing with CSS</h2><br>
+
+                    <div style="margin: 50px 0px 0px 50px; ; transform: scale(2); border: 5px black solid; position: relative; border-radius:50%; background-color: white; width:75px; height:75px;">
+                    <div style="position:absolute; background-color: black; width:10px; height:10px; border-radius: 50%; left: 20px; top:20px;"></div>
+                    <div style="position:absolute; background-color: black; width:10px; height:10px; border-radius: 50%; left: 45px; top:20px;"></div>
+                    <div style="position:absolute; background-color: black; width:5px; height:15px; border-radius: 50%; left: 35px; top:30px;"></div>
+                    <div style="position:absolute; background-color: black; width:25px; height:15px; border-radius: 50%; left: 25px; top:50px;"></div>
+                    </div>
+                    <br><br><br>
+
+                    <h2>Animating with CSS</h2><br>
+                    <p>To animate something using CSS, we will use the next formula:</p><br>
+                    <ol>
+                        <li>Firstly, we will give the element two CSS properties: <code>animation-name</code> and <code>animation-duration</code>. This last one can be set in <strong>seconds</strong> (<code>s</code>) and <strong>miliseconds</strong> (<code>ms</code>). All of it as it follows:</li><br>
+                        <code>selector {<br>&nbsp;&nbsp;&nbsp;animation-name: my-animation-name;<br>&nbsp;&nbsp;&nbsp;animation-duration:5s;<br>}</code><br><br>
+                        <li>Secondly, we will use <code>@keyframes animation-name</code> (with the previously stated animation name) and percentages to mark the state of the animation along the duration of it. Proceed as it follows:</li><br>
+                        <code>@keyframes my-animation-name {<br>&nbsp;&nbsp;&nbsp;0% {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS-property-to-be-animated: value-at-0%-of-the-animation-length;<br>&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;25% {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS-property-to-be-animated: value-at-25%-of-the-animation-length;<br>&nbsp;&nbsp;&nbsp;}</code><br><br>
+                        <p>And so on.</p><br>
+                </ol>
+                <h3>CSS animations -- notes</h3><br>
+                <ul>
+                    <li>Animations can be used with pseudo-clases such as <code>:hover</code>. For example:<br><br>
+                    <code> img:hover {<br>&nbsp;&nbsp;&nbsp;animation-name: width;<br>&nbsp;&nbsp;&nbsp;animation-duration: 500ms;<br>}<br><br>@keyframes width {<br>&nbsp;&nbsp;&nbsp;100% {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 40px;<br>&nbsp;&nbsp;&nbsp;}<br>}</code></li><br>
+                    <li>To avoid the animation to reset to an initial state once it is finished, we will use:</li><br>
+                    <code>animation-fill-mode: forwards</code> within the properties of the given selector. For example:<br><br>
+                    <code>element {<br>&nbsp;&nbsp;&nbsp;animation-name: my-animation-name;<br>&nbsp;&nbsp;&nbsp;animation-duration: 4s;<br>&nbsp;&nbsp;&nbsp;animation-fill-mode: forwards;<br>}</code><br><br>
+                    <p>After that, we will use the <code>@keyframes</code> property. For example, here we see a combined use of animation on a <code>:hover</code> pseudo-class and the use of <code>animation-fill-mode: forwards</code>.</p><br>
+
+                    <style>
+                        .button-animated {
+                            border-radius: 15px;
+                            font-weight: 800;
+                            padding: 25px;
+                        }
+
+                        .button-animated:hover {
+                            font-weight: 800;
+                            padding: 25px;
+                            cursor: pointer;
+                            animation-name: hovering-button;
+                            animation-duration: 2s;
+                            animation-fill-mode: forwards;
+                        }
+
+                        @keyframes hovering-button {
+                            0% {
+                                background-color: white;
+                            }
+                            100% {
+                                background-color: blue;
+                            }
+                        }
+                        
+                    </style>
+
+                    <button class="button-animated">Hover me!</button><br><br>
+                    <li>With <code>position</code> set to <code>relative</code> or <code>fixed</code>, <strong>offset</strong> properties can be animated to generate movement. For example:</li><br>
+
+                    <style>
+                        .moving {
+                            text-align: center;
+                            padding: 25px;
+                            position: relative;
+                            width: 100px;
+                            font-weight: 800;
+                            font-size:16px;
+                            animation-name: moving-rectangle;
+                            animation-duration: 8s;
+                            background-color: red;
+                        }
+                        
+                        @keyframes moving-rectangle {
+                            0% {
+                                left:0%;
+                                opacity: 1;
+                                color: white;
+                                background-color: red;
+                            }
+                            50% {
+                                left: 90%;
+                                opacity: 1;
+                                color: red;
+                                background-color: white;
+                            }
+                            100% {
+                                left:0%;
+                                opacity: 1;
+                                color: white;
+                                background-color: red;
+
+                            }
+                        }
+                    </style>
+                    
+                    <div class="moving">I am moving!</div>
+                    <br>
+                    <li>Also, if we want an animation to loop either a determined number of times or infinitely, we will use <code>animation-iteration-count</code>, either setting a numeric value or the value <code>infinite</code>. For example:</li><br>
+                        
+                        <style>
+                            .moving2 {
+                                text-align: center;
+                                padding: 25px;
+                                position: relative;
+                                width: 100px;
+                                font-weight: 800;
+                                font-size:16px;
+                                animation-name: moving-rectangle-2;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                            }
+                            
+                            @keyframes moving-rectangle-2 {
+                                0% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;
+                                }
+                                50% {
+                                    left: 90%;
+                                    opacity: 1;
+                                    color: red;
+                                    background-color: white;
+                                }
+                                100% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;    
+                                }
+                            }
+                        </style>
+                        
+                        <div class="moving2">I am moving!</div>
+                        <br>
+
+                        <li>Next, we can change the timing of the animations with the CSS property <code>animation-timing-function</code> and the next values:
+                            <ul>
+                                <li><code>ease</code></li>
+                                <li><code>ease-in</code></li>
+                                <li><code>ease-out</code></li>
+                                <li><code>linear</code></li>
+                            </ul>
+                            </li>
+                            <h3>Ease</h3>
+                            
+                        <style>
+                            .moving3 {
+                                text-align: center;
+                                padding: 25px;
+                                position: relative;
+                                width: 100px;
+                                font-weight: 800;
+                                font-size:16px;
+                                animation-name: moving-rectangle-3;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease;
+                            }
+                            
+                            @keyframes moving-rectangle-3 {
+                                0% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;
+                                }
+                                50% {
+                                    left: 90%;
+                                    opacity: 1;
+                                    color: red;
+                                    background-color: white;
+                                }
+                                100% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;    
+                                }
+                            }
+                        </style>
+                        
+                        <div class="moving3">I am moving!</div>
+                        <br>
+
+                        <h3>Ease-in</h3>
+                            
+                        <style>
+                            .moving4 {
+                                text-align: center;
+                                padding: 25px;
+                                position: relative;
+                                width: 100px;
+                                font-weight: 800;
+                                font-size:16px;
+                                animation-name: moving-rectangle-4;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease-in;
+                            }
+                            
+                            @keyframes moving-rectangle-4 {
+                                0% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;
+                                }
+                                50% {
+                                    left: 90%;
+                                    opacity: 1;
+                                    color: red;
+                                    background-color: white;
+                                }
+                                100% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;    
+                                }
+                            }
+                        </style>
+                        
+                        <div class="moving4">I am moving!</div>
+
+                        <h3>Ease-out</h3>
+                            
+                        <style>
+                            .moving5 {
+                                text-align: center;
+                                padding: 25px;
+                                position: relative;
+                                width: 100px;
+                                font-weight: 800;
+                                font-size:16px;
+                                animation-name: moving-rectangle-5;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: ease-out;
+                            }
+                            
+                            @keyframes moving-rectangle-5 {
+                                0% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;
+                                }
+                                50% {
+                                    left: 90%;
+                                    opacity: 1;
+                                    color: red;
+                                    background-color: white;
+                                }
+                                100% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;    
+                                }
+                            }
+                        </style>
+                        
+                        <div class="moving5">I am moving!</div>
+
+                        <h3>Linear</h3>
+                            
+                        <style>
+                            .moving6 {
+                                text-align: center;
+                                padding: 25px;
+                                position: relative;
+                                width: 100px;
+                                font-weight: 800;
+                                font-size:16px;
+                                animation-name: moving-rectangle-6;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: linear;
+                            }
+                            
+                            @keyframes moving-rectangle-6 {
+                                0% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;
+                                }
+                                50% {
+                                    left: 90%;
+                                    opacity: 1;
+                                    color: red;
+                                    background-color: white;
+                                }
+                                100% {
+                                    left:0%;
+                                    opacity: 1;
+                                    color: white;
+                                    background-color: red;    
+                                }
+                            }
+                        </style>
+                        
+                        <div class="moving6">I am moving!</div>
+
+                        <br>
+
+
+                </ul>
+
+
+                </div>
         </main>
     </body>
 </html>
