@@ -276,6 +276,14 @@ figcaption {
   width: 75%;
 }
 
+[type="submit"] {
+  background-color: var(--color4);
+  color: var(--color1);
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 .rich-snippet {
   background: linear-gradient(135deg, var(--color1), var(--color2));
   margin: 0px auto 20px auto;
