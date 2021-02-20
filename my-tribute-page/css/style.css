@@ -1,3 +1,16 @@
+/*******************************************/
+/*    A Charles Bukoswki's Tribute Page    */
+/*          CSS by Ibai Fernández          */
+/*               Version: 1.0              */
+/*        Date: February, 19th 2021        */
+/*        Code Journey -- Stage #1         */
+/*******************************************/
+
+/* Pending tasks #1: Do not forget to do fallbacks for gradients */
+/* Pending tasks #2: Do not forget to do fallbacks for gradients */
+/* Pending tasks #3: Alphabetize all properties of all selectors */
+/* Pending tasks #4: Define media query for the 320px breakpoint */
+
 /* Importing Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
@@ -12,82 +25,38 @@
 /* Standard elements */
 
 html {
-  font-family: "Newsreader", serif;
-  font-size: 16px;
-  background-color: #f2f2f2;
+  /* standard root font size and color variables */
   --color1: #f2f2f2;
   --color2: #bfbfbf;
   --color3: #737373;
   --color4: #404040;
   --color5: #0d0d0d;
-}
-
-a {
-  color: var(--color4);
-  font-weight: 600;
-}
-
-h1 {
-  font-family: "Newsreader", serif;
-  color: var(--color5);
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  color: var(--color4);
+  font-size: 16px;
 }
 
 body {
   width: 100%;
 }
 
-h2 {
-  font-family: "Newsreader", serif;
-  color: var(--color5);
-  margin: 25px 0 0 85px;
+main {
+  background-color: transparent;
+  float: left;
+  width: 75%;
 }
 
 aside {
-  width: 25%;
-  height: 100%;
   float: right;
-  background-color: transparent;
-}
-#poetry {
-  float: left;
-}
-
-#short-stories {
-  float: left;
-}
-
-#resources {
-  float: left;
-}
-
-main {
-  float: left;
-  width: 75%;
-  background-color: transparent;
-}
-
-blockquote {
-  font-size: 1.5rem;
-  font-family: "Newsreader", serif;
-  color: var(--color1);
-  padding: 25px;
-  line-height: 3rem;
-  margin: 10px 0;
+  width: 25%;
 }
 
 footer {
-  font-family: "Robot", sans-serif;
-  text-align: center;
-  float: left;
-  width: 100%;
-  padding: 25px 0;
   background-color: var(--color4);
+  float: left;
+  font-family: "Roboto", sans-serif;
   line-height: 2rem;
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
 }
 
 footer ul {
@@ -100,13 +69,13 @@ footer ul li {
 }
 
 footer ul li a {
-  text-decoration: none;
   color: var(--color1);
+  text-decoration: none;
 }
 
 footer ul li a:hover {
-  text-decoration: none;
   color: var(--color3);
+  text-decoration: none;
   transform: scale(1.5);
 }
 
@@ -122,19 +91,48 @@ footer a:hover {
   color: var(--color2);
 }
 
+h1 {
+  color: var(--color5);
+  font-family: "Newsreader", serif;
+}
+
+h2 {
+  color: var(--color5);
+  font-family: "Newsreader", serif;
+  margin: 25px 0 0 85px;
+}
+
+blockquote {
+  color: var(--color1);
+  font-family: "Newsreader", serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 10px 0;
+  padding: 25px;
+}
+
+p {
+  color: var(--color4);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: var(--color4);
+  font-weight: 600;
+}
+
 /* Page Sections */
 
 /* Header */
 
 #header {
-  width: auto;
   height: 50px;
   padding: 20px;
 }
 
 .page-title {
-  text-align: right;
   float: left;
+  text-align: right;
 }
 
 #header p {
@@ -149,114 +147,112 @@ nav {
 }
 
 .navigation-list {
-  padding-top: 20px;
   list-style: none;
+  padding-top: 15px;
 }
 
 .navigation-list li {
-  padding: 0px 20px;
-  height: 100%;
   display: inline;
+  height: 100%;
+  padding: 0px 20px;
 }
 
 .navigation-list a {
   text-decoration: none;
 }
 
-.gallery {
-  float: left;
-  width: 100%;
-  padding: 0;
-  margin: 25px 0 0 0;
-}
-
-.gallery img {
-  display: block;
-  margin: 0;
-  float: left;
-  padding: 0;
-  margin: 0;
-  width: 25%;
-}
-
 /* Main */
-
-/* Feature */
 
 .feature {
   margin: 0 25px;
-  background-color: transparent;
 }
 
 .fig-block {
   width: 100%;
-  background-color: transparent;
 }
 
 figure {
-  width: 80%;
   margin: 0 auto;
   padding: 0 0 15px 0;
-}
-
-.main-pic {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
 }
 
 figcaption {
-  text-align: right;
-  padding: 10px 0 0 0;
   margin: 5px 0 0 0;
+  padding: 10px 0 0 0;
+  text-align: right;
 }
 
 .cover-img {
   display: block;
-  width: 100%;
   margin: 0 auto;
+  max-width: 100%; /* What do I do? */
 }
 
 .main-text {
-  margin: 25px 85px;
   line-height: 2rem;
+  margin: 25px 85px;
 }
 
 .main-text ul {
-  font-family: "Roboto", serif;
   color: var(--color4);
+  font-family: "Roboto", serif;
   margin: 10px 0 10px 40px;
 }
 
-.blockquote {
-  width: 100%;
+/* Blockquotes */
+
+.blockquote-div {
   background: linear-gradient(135deg, var(--color4), var(--color3));
   margin: 20px 0px;
+  width: 100%;
 }
 
 .quote-marks {
   background-image: url(../img/quote-marks.png);
-  width: 100px;
   height: 100px;
+  left: 20px;
   position: relative;
   top: 20px;
-  left: 20px;
+  width: 100px;
 }
 
 .quote-author {
   margin: -50px 0 0 0;
 }
+
 .quote-author p {
-  font-size: 1rem;
-  font-family: "Newsreader", serif;
   color: var(--color1);
-  padding: 25px;
+  font-family: "Newsreader", serif;
+  font-size: 1rem;
   margin: 10px 0;
+  padding: 25px;
   text-align: right;
+}
+
+/* Section IDs */
+
+#main-facts {
+  float: left;
 }
 
 #novels {
   float: left;
 }
+
+#poetry {
+  float: left;
+}
+
+#short-stories {
+  float: left;
+}
+
+#resources {
+  float: left;
+}
+
+/* Styling */
 
 .work-titles {
   font-style: italic;
@@ -264,10 +260,10 @@ figcaption {
 
 .poem {
   font-family: "Newsreader", serif;
-  line-height: 1.5rem;
-  margin: 25px auto 10px auto;
+  line-height: 1.1rem;
+  margin: 10px auto 0 auto;
   width: 90%;
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
 }
 
 .signature {
@@ -276,13 +272,17 @@ figcaption {
   width: 75%;
 }
 
-[type="submit"] {
-  background-color: var(--color4);
-  color: var(--color1);
+/* Sidebar */
+
+/* Image */
+
+.bio-pic {
   width: 50%;
+  margin: 5px auto;
   display: block;
-  margin: 0 auto;
 }
+
+/* Sidebar Individual Sections */
 
 .rich-snippet {
   background: linear-gradient(135deg, var(--color1), var(--color2));
@@ -292,6 +292,8 @@ figcaption {
   height: 100%;
   border: var(--color3) solid 2px;
 }
+
+/* Sidebar Headers */
 
 .rich-snippet h2 {
   font-size: 1.25rem;
@@ -313,14 +315,10 @@ figcaption {
   margin: 15px 0 10px 0;
 }
 
+/* Sidebar Styling */
+
 .rich-snippet p {
   font-size: 0.9rem;
-}
-
-.bio-pic {
-  width: 50%;
-  margin: 5px auto;
-  display: block;
 }
 
 .personal-data {
@@ -333,6 +331,15 @@ figcaption {
   padding: 0 5px 0 50px;
   line-height: 1.5rem;
 }
+
+.article-date {
+  font-size: 0.2rem;
+  text-align: right;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+
+/* Sidebar Separators */
 
 .separator-1 {
   width: 50%;
@@ -347,12 +354,14 @@ figcaption {
   background-color: var(--color3);
 }
 
-.article-date {
-  font-size: 0.2rem;
-  text-align: right;
-  font-style: italic;
-  margin: 20px 0 0 0;
+.separator-3 {
+  width: 50%;
+  height: 3px;
+  margin: 20px auto 25px auto;
+  background-color: var(--color5);
 }
+
+/* Subscription Form */
 
 .subcription-cta {
   text-align: center;
@@ -376,7 +385,39 @@ input {
   color: var(--color2);
 }
 
-/* Media Queries */
+[type="submit"] {
+  background-color: var(--color4);
+  color: var(--color1);
+  width: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/************ Gallery ************/
+
+.gallery {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 25px 0 0 0;
+}
+
+.gallery img {
+  display: block;
+  margin: 0;
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+}
+
+/************ Media Queries ************/
+
+/********** 1024px Breakpoint **********/
 
 @media (max-width: 1024px) {
   main {
@@ -447,6 +488,8 @@ input {
   }
 }
 
+/********** 770px Breakpoint **********/
+
 @media (max-width: 770px) {
   .main-text {
     margin: 25px 55px;
@@ -457,7 +500,7 @@ input {
   }
 
   .poem {
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 1.5rem !important;
   }
 
@@ -473,6 +516,8 @@ input {
     line-height: 1.5rem;
   }
 }
+
+/********** 480px Breakpoint **********/
 
 @media (max-width: 480px) {
   #header {
