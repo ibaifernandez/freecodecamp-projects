@@ -45,7 +45,7 @@ aside {
 }
 
 footer {
-  background-color: var(--color4);
+  background-color: var(--color4, #404040);
   float: left;
   font-family: "Roboto", sans-serif;
   line-height: 2rem;
@@ -64,41 +64,41 @@ footer ul li {
 }
 
 footer ul li a {
-  color: var(--color1);
+  color: var(--color1, #f2f2f2);
   text-decoration: none;
 }
 
 footer ul li a:hover {
-  color: var(--color3);
+  color: var(--color3, #737373);
   text-decoration: none;
   transform: scale(1.5);
 }
 
 footer p {
-  color: var(--color1);
+  color: var(--color1, #f2f2f2);
 }
 
 footer a {
-  color: var(--color1);
+  color: var(--color1, #f2f2f2);
 }
 
 footer a:hover {
-  color: var(--color2);
+  color: var(--color2, #bfbfbf);
 }
 
 h1 {
-  color: var(--color5);
+  color: var(--color5, #0d0d0d);
   font-family: "Newsreader", serif;
 }
 
 h2 {
-  color: var(--color5);
+  color: var(--color5, #0d0d0d);
   font-family: "Newsreader", serif;
   margin: 25px 0 0 85px;
 }
 
 blockquote {
-  color: var(--color1);
+  color: var(--color1, #f2f2f2);
   font-family: "Newsreader", serif;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -107,12 +107,12 @@ blockquote {
 }
 
 p {
-  color: var(--color4);
+  color: var(--color4, #404040);
   font-family: "Roboto", sans-serif;
 }
 
 a {
-  color: var(--color4);
+  color: var(--color4, #404040);
   font-weight: 600;
 }
 
@@ -142,7 +142,7 @@ input {
 }
 
 #header p {
-  color: var(--color4);
+  color: var(--color4, #404040);
   font-family: "Newsreader", serif;
   font-style: italic;
   font-weight: 600;
@@ -201,7 +201,7 @@ figure {
 }
 
 .main-text ul {
-  color: var(--color4);
+  color: var(--color4, #404040);
   font-family: "Roboto", sans-serif;
   margin: 10px 0 10px 40px;
 }
@@ -229,7 +229,7 @@ figure {
 }
 
 .quote-author p {
-  color: var(--color1);
+  color: var(--color1, #f2f2f2);
   font-family: "Newsreader", serif;
   font-size: 1rem;
   margin: 10px 0;
@@ -238,7 +238,7 @@ figure {
 }
 
 .quote-author p a {
-  color: var(--color2);
+  color: var(--color2, #bfbfbf);
 }
 
 /******************* Section IDs *******************/
@@ -284,7 +284,7 @@ figure {
 .rich-snippet {
   background-color: #bfbfbf;
   background: linear-gradient(135deg, var(--color1), var(--color2));
-  border: var(--color3) solid 2px;
+  border: var(--color3, #737373) solid 2px;
   height: 100%;
   margin: 0px auto 20px auto;
   padding: 10px;
@@ -354,20 +354,20 @@ figure {
 /***************** Sidebar Separators *****************/
 
 .separator-1 {
-  background-color: var(--color5);
+  background-color: var(--color5, #0d0d0d);
   height: 3px;
   margin: 20px auto 5px auto;
   width: 50%;
 }
 
 .separator-2 {
-  background-color: var(--color3);
+  background-color: var(--color3, #737373);
   height: 2px;
   margin: 20px 0 5px 0;
 }
 
 .separator-3 {
-  background-color: var(--color5);
+  background-color: var(--color5, #0d0d0d);
   height: 3px;
   margin: 20px auto 25px auto;
   width: 50%;
@@ -387,8 +387,8 @@ figure {
 }
 
 [type="submit"] {
-  background-color: var(--color4);
-  color: var(--color1);
+  background-color: var(--color4, #404040);
+  color: var(--color1, #f2f2f2);
   display: block;
   margin: 20px auto 20px auto;
   width: 50%;
