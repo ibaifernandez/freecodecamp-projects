@@ -17,7 +17,7 @@
         <title>My Survey Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../my-survey-form/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../my-survey-form/css/style-flex.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -38,68 +38,85 @@
             <form id="survey-form" name="my-survey-form" accept-charset="UTF-8" action="#" autocomplete="off">
                 <p class="form-section-title">Tell us about you!</p>
 
-                
-                <div class="form-left">
-                    <div class="username">
-                        <label id="name-label" for="name">Name *
-                            <input required class="personal-info" id="name" type="text" placeholder="Ex.: Tyrion">
-                            </label>
-                        <label id="last-name-label" for="lname">Last name *
-                            <input required class="personal-info" id="lname" type="text" placeholder="Ex.: Lannister">
-                            </label>
-        
-                    </div>
-                                    
-                    <label id="number-label" for="number">What's your age? *
-                    <input id="number" class="personal-info" type="number" name="age" placeholder="Ex.: 34" min="0" max="99">
-                    </label>
-                
-                </div>
-                
-                <div class="form-right">
-                    <label id="email-label" for="email">What's your email? *
-                    <input required id="email" class="mail" type="email" placeholder="Ex.: johndoe@example.com">
-                    </label>
-                    <label id="dropdown-menu" for="dropdown">What's your genre?
-                    <select id="dropdown" name="genre">
-                        <option value="none">Please, choose one of the following options...</option>    
-                        <option value="Female">Female</option>    
-                        <option value="Male">Male</option>    
-                        <option value="Transgender">Transgender</option>    
-                        <option value="Non-binary/Non-conformist">Non-binary/Non-conformist</option>    
-                        <option value="Other">Other</option>    
-                        <option value="I rather not say it">I rather not say it</option>   
-                    </select>
-                    </label>
-                </div>
+                    <div class="user-info-div">
 
-                <div class="form-center">
+                        <div class="user-info-input-div">
+                            <label id="name-label" for="name" >Name *
+                                <input required class="personal-info-boxes" id="name" type="text" placeholder="Ex.: Tyrion">
+                            </label>
+                        </div>
+
+                        <div class="user-info-input-div">
+                            <label id="last-name-label" for="lname">Last name *
+                                <input required class="personal-info-boxes" id="lname" type="text" placeholder="Ex.: Lannister">
+                            </label>
+                        </div>
+
+                        <div class="user-info-input-div">
+                            <label id="number-label" for="number">Age *
+                                <input id="number" class="personal-info-boxes" type="number" name="age" placeholder="Ex.: 34" min="0" max="99">
+                            </label>
+                        </div>
+
+                        <div class="user-info-input-div">
+                            <label id="email-label" for="email">Email *
+                                <input required id="email" class="personal-info-boxes" type="email" placeholder="Ex.: johndoe@example.com">
+                            </label>          
+                        </div>              
+
+                        <div class="user-info-input-div">
+                           <label id="dropdown-menu" for="dropdown">Genre
+                                <select id="dropdown" class="personal-info-boxes" name="genre">
+                                    <option value="none"></option>    
+                                    <option value="Female">Female</option>    
+                                    <option value="Male">Male</option>    
+                                    <option value="Transgender">Transgender</option>    
+                                    <option value="Non-binary/Non-conformist">Non-binary/Non-conformist</option>    
+                                    <option value="Other">Other</option>    
+                                    <option value="I rather not say it">I rather not say it</option>   
+                            </select>
+                            </label>
+                        </div>
+
+                    </div>
+
+                <div class="experience">
                     <p class="form-section-title">Tell us about your experience!</p>
+                    
                     <fieldset>
-                        <legend class="times-legend">How many times have you purchased in our store? *</legend>
-                            <div class="purchase-times">
-                                <label class="times-values" for="recommendation-1"><input id="recommendation-1" class="radio-button" type="radio" name="recommendation" value="1" required> 1</label>
-                                <label class="times-values" for="recommendation-2"><input id="recommendation-2" type="radio" name="recommendation" value="2"> 2</label>
-                                <label class="times-values" for="recommendation-3"><input id="recommendation-3" type="radio" name="recommendation" value="2"> 3</label>
-                                <label class="times-values" for="recommendation-4"><input id="recommendation-4" type="radio" name="recommendation" value="4"> 4</label>
-                                <label class="times-values" for="recommendation-5"><input id="recommendation-5" type="radio" name="recommendation" value="5+"> 5+</label>
-                            </div>
+                        <div class="times-purchase-div">
+                            <legend class="tag">How many times have you purchased in our store? *</legend>
+                                <div class="purchase-times">
+                                    <label class="times-values" for="purchase-times-1"><input id="purchase-times-1" type="radio" name="recommendation" value="1" required> 1</label>
+                                    <label class="times-values" for="purchase-times-2"><input id="purchase-times-2" type="radio" name="recommendation" value="2"> 2</label>
+                                    <label class="times-values" for="purchase-times-3"><input id="purchase-times-3" type="radio" name="recommendation" value="2"> 3</label>
+                                    <label class="times-values" for="purchase-times-4"><input id="purchase-times-4" type="radio" name="recommendation" value="4"> 4</label>
+                                    <label class="times-values" for="purchase-times-5"><input id="purchase-times-5" type="radio" name="recommendation" value="5+"> 5+</label>
+                                </div>
+                        </div>
+
+                        <div class="date-of-purchase">
                             <label for="last-purchase" class="last-purchase">When did you do your last purchase? *</label>
-                            <input type="date" id="last-purchase" name="last-purchase" required>
+                                <div class="date-box">
+                                    <input type="date" id="last-purchase" name="last-purchase" required>
+                                </div>
+                        </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend class="likings-legend">What do you like the most about us? (multiple choice allowed)</legend>
-                            <div class="likings-boxes">
+                        <div class="liking-div">
+                           <legend class="tag">What do you like the most about us? (multiple choice allowed)</legend>
+                            <div class="liking-boxes">
                                 <label class="liking-values" for="likings-1"><input id="likings-1" type="checkbox" name="likings" value="Customer Service"> Customer Service</label>
                                 <label class="liking-values" for="likings-2"><input id="likings-2" type="checkbox" name="likings" value="Pricing"> Pricing</label>
                                 <label class="liking-values" for="likings-3"><input id="likings-3" type="checkbox" name="likings" value="Shipping Cost"> Shipping Cost</label>
                                 <label class="liking-values" for="likings-4"><input id="likings-4" type="checkbox" name="likings" value="Website Design"> Website Design</label>
                                 <label class="liking-values" for="likings-5"><input id="likings-5" type="checkbox" name="likings" value="Insurance Policy"> Insurance Policy</label>
                             </div>
+                        </div>
                     </fieldset>
 
-                        <label for="recommendation-range" class="recommendation-range">From 1 to 10, how likely is for you to recommend us to a friend?</label>
+                        <label for="recommendation-range" class="tag">From 1 to 10, how likely is for you to recommend us to a friend?</label>
 
                         <div class="recommendation">
                         <div class="recommendation-scale">
@@ -115,8 +132,7 @@
                         </label>
                     </div>
 
-                </div>
-                
+
                 <input id="submit" type="submit" value="Submit">
 
                 <div class="required">            
