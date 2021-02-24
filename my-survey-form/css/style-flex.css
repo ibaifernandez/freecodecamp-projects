@@ -1,17 +1,14 @@
 /*******************************************/
 /*             My Survey Form              */
 /*          CSS by Ibai Fernández          */
-/*               Version: 1.2              */
+/*               Version: 2.0              */
 /*        Date: February, 23th 2021        */
 /*        Code Journey - Stage #1          */
 /*******************************************/
 
-/* Note #1: Breakpoint needed at 1143px */
-
 /* Pending task #1: Style Radio Buttons */
 /* Pending task #1: Style Checkboxes */
 /* Pending task #1: Style Range Selector */
-/* Pending task #1: Media Queries */
 
 /********** Import Google Fonts ************/
 
@@ -80,9 +77,9 @@ label {
 .logo {
   border-bottom: 3px solid white;
   border-radius: 10px;
-  font-size: 2vw;
+  font-size: 2vmax;
   margin: 0 auto 1vw auto;
-  padding: 5px;
+  padding: 0.5vmax;
 }
 
 .logo a {
@@ -92,17 +89,17 @@ label {
 
 .logo span {
   font-family: "Caveat", sans-serif;
-  font-size: 2vw;
+  font-size: 2vmax;
 }
 
 /*************** Header *****************/
 
 header {
   background-color: var(--color-2, #f2b90c);
-  box-shadow: 0 10px 20px 10px var(--color-2);
+  box-shadow: 0 10px 20px 10px var(--color-2, #f2b90c);
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 2vmax 0;
   text-align: center;
 }
 
@@ -110,14 +107,14 @@ h1 {
   color: white;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
-  margin: 0 0 2vh 0;
+  margin: 0 0 2vmax 0;
 }
 
 /******** Header's Elements **********/
 
 .cta {
   font-weight: 900;
-  margin: 0 0 2vh 0;
+  margin: 0 0 2vmax 0;
 }
 
 #description {
@@ -129,9 +126,9 @@ h1 {
   background-image: url(../img/separator.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 2vh;
+  height: 2vmax;
   margin: 0 auto 2vh auto;
-  width: 15vw;
+  width: 15vmax;
 }
 
 /************** Form ***************/
@@ -146,8 +143,8 @@ form {
   display: flex;
   flex-direction: column;
   margin: 75px auto;
-  padding: 5vh;
-  width: 60%;
+  padding: 5vmax;
+  width: 60vmax;
 }
 
 .form-section-title {
@@ -161,20 +158,19 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 25px 0;
+  margin: 2vmax 0;
 }
 
 .user-info-input-div {
   width: 25%;
-  margin: 10px;
+  margin: 1vmax;
 }
 
 .personal-info-boxes {
   display: flex;
   border: 1px solid var(--color-1);
   border-radius: 5px;
-  color: var(--color-5);
-  font-family: "Open Sans", sans-serif;
+  color: var(--color-5, rgba(13, 13, 13, 0.9));
   font-weight: 600;
   opacity: 0.9;
   padding: 10px;
