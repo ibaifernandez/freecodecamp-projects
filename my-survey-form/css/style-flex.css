@@ -177,6 +177,18 @@ form {
   width: 100%;
 }
 
+.personal-info-boxes:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+input[type="date"]:focus {
+  box-shadow: 0 2px 5px var(--color-5);
+}
+
+input[type="submit"]:focus {
+  animation: button-lightup 500ms linear forwards;
+  box-shadow: 0 2px 5px var(--color-5);
+}
+
 fieldset {
   border: 0; /* Removes an ugly border that fieldsets happen to have by default */
   padding: 0; /* This is actually overriding the 'padding:0' set when resetting broswer's default settings, so, what's the point? */
@@ -379,6 +391,16 @@ footer ul li {
 footer ul li a {
   color: var(--color-5);
   text-decoration: none;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 footer ul li a:hover {
