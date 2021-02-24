@@ -420,7 +420,7 @@ footer a:hover {
   form {
     flex-direction: column;
     flex-wrap: wrap;
-    width: 75%;
+    width: 80%;
   }
 
   .form-section-title {
@@ -430,7 +430,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40vmax;
+    width: 35vmax;
   }
 
   .user-info-div {
