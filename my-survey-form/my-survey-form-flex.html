@@ -65,9 +65,9 @@
                         </div>              
 
                         <div class="user-info-input-div">
-                           <label id="dropdown-menu" for="dropdown">Genre
-                                <select id="dropdown" class="personal-info-boxes" name="genre">
-                                    <option value="none"></option>    
+                           <label id="dropdown-menu" for="dropdown">Gender
+                                <select id="dropdown" class="personal-info-boxes" name="gender">
+                                    <option value="none">Choose your gender</option>    
                                     <option value="Female">Female</option>    
                                     <option value="Male">Male</option>    
                                     <option value="Transgender">Transgender</option>    
@@ -83,8 +83,8 @@
                 <div class="experience">
                     <p class="form-section-title">Tell us about your experience!</p>
                     
-                    <fieldset>
-                        <div class="times-purchase-div">
+                    <div class="times-purchase-div">
+                        <fieldset>
                             <legend class="tag">How many times have you purchased in our store? *</legend>
                                 <div class="purchase-times">
                                     <label class="times-values" for="purchase-times-1"><input id="purchase-times-1" type="radio" name="recommendation" value="1" required> 1</label>
@@ -93,28 +93,29 @@
                                     <label class="times-values" for="purchase-times-4"><input id="purchase-times-4" type="radio" name="recommendation" value="4"> 4</label>
                                     <label class="times-values" for="purchase-times-5"><input id="purchase-times-5" type="radio" name="recommendation" value="5+"> 5+</label>
                                 </div>
-                        </div>
 
-                        <div class="date-of-purchase">
-                            <label for="last-purchase" class="last-purchase">When did you do your last purchase? *</label>
-                                <div class="date-box">
-                                    <input type="date" id="last-purchase" name="last-purchase" required>
+                               <div class="date-of-purchase">
+                                    <label for="last-purchase" class="last-purchase">When did you do your last purchase? *</label>
+                                        <div class="date-box">
+                                            <input type="date" id="last-purchase" name="last-purchase" required>
+                                        </div>
                                 </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
 
-                    <fieldset>
-                        <div class="liking-div">
+
+                    <div class="liking-div">
+                        <fieldset>
                            <legend class="tag tag-media">What do you like the most about us? (multiple choice allowed)</legend>
-                            <div class="liking-boxes">
-                                <label class="liking-values" for="likings-1"><input id="likings-1" type="checkbox" name="likings" value="Customer Service"> Customer Service</label>
-                                <label class="liking-values" for="likings-2"><input id="likings-2" type="checkbox" name="likings" value="Pricing"> Pricing</label>
-                                <label class="liking-values" for="likings-3"><input id="likings-3" type="checkbox" name="likings" value="Shipping Cost"> Shipping Cost</label>
-                                <label class="liking-values" for="likings-4"><input id="likings-4" type="checkbox" name="likings" value="Website Design"> Website Design</label>
-                                <label class="liking-values" for="likings-5"><input id="likings-5" type="checkbox" name="likings" value="Insurance Policy"> Insurance Policy</label>
-                            </div>
-                        </div>
-                    </fieldset>
+                               <div class="liking-boxes">
+                                    <label class="liking-values" for="likings-1"><input id="likings-1" type="checkbox" name="likings" value="Customer Service"> Customer Service</label>
+                                    <label class="liking-values" for="likings-2"><input id="likings-2" type="checkbox" name="likings" value="Pricing"> Pricing</label>
+                                    <label class="liking-values" for="likings-3"><input id="likings-3" type="checkbox" name="likings" value="Shipping Cost"> Shipping Cost</label>
+                                    <label class="liking-values" for="likings-4"><input id="likings-4" type="checkbox" name="likings" value="Website Design"> Website Design</label>
+                                    <label class="liking-values" for="likings-5"><input id="likings-5" type="checkbox" name="likings" value="Insurance Policy"> Insurance Policy</label>
+                                </div>
+                        </fieldset>
+                    </div>
 
                     <div class="recommendation">
                         <label for="recommendation-range" class="tag">From 1 to 10, how likely is for you to recommend us to a friend?</label>
@@ -123,7 +124,7 @@
                             <div class="scale">
                          
                                 <div class="range">
-                                    <input type="range" id="vol" name="vol" min="1" max="10">
+                                    <input type="range" id="recommendation-range" name="vol" min="1" max="10">
                                 </div>
                          
                                 <div class="numbers">
@@ -155,7 +156,7 @@
                 <div class="required">            
                     <p>All fields marked with * are required.</p>
                     </div>
-    
+                </div>
             </form>
         </main>
 
