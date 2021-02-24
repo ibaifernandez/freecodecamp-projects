@@ -42,31 +42,31 @@
 
                         <div class="user-info-input-div">
                             <label id="name-label" for="name" >Name *
-                                <input required class="personal-info-boxes" id="name" type="text" placeholder="Ex.: Tyrion">
+                                <input required class="personal-info-boxes" id="name" type="text" placeholder="Ex.: Tyrion" tabindex="1">
                             </label>
                         </div>
 
                         <div class="user-info-input-div">
                             <label id="last-name-label" for="lname">Last name *
-                                <input required class="personal-info-boxes" id="lname" type="text" placeholder="Ex.: Lannister">
+                                <input required class="personal-info-boxes" id="lname" type="text" placeholder="Ex.: Lannister" tabindex="2">
                             </label>
                         </div>
 
                         <div class="user-info-input-div">
                             <label id="number-label" for="number">Age *
-                                <input id="number" class="personal-info-boxes" type="number" name="age" placeholder="Ex.: 34" min="0" max="99">
+                                <input id="number" class="personal-info-boxes" type="number" name="age" placeholder="Ex.: 34" min="0" max="99" tabindex="3">
                             </label>
                         </div>
 
                         <div class="user-info-input-div">
                             <label id="email-label" for="email">Email *
-                                <input required id="email" class="personal-info-boxes" type="email" placeholder="Ex.: johndoe@example.com">
+                                <input required id="email" class="personal-info-boxes" type="email" placeholder="Ex.: johndoe@example.com" tabindex="4">
                             </label>          
                         </div>              
 
                         <div class="user-info-input-div">
                            <label id="dropdown-menu" for="dropdown">Gender
-                                <select id="dropdown" class="personal-info-boxes" name="gender">
+                                <select id="dropdown" class="personal-info-boxes" name="gender" tabindex="5">
                                     <option value="none">Choose your gender</option>    
                                     <option value="Female">Female</option>    
                                     <option value="Male">Male</option>    
@@ -87,7 +87,7 @@
                         <fieldset>
                             <legend class="tag">How many times have you purchased in our store? *</legend>
                                 <div class="purchase-times">
-                                    <label class="times-values" for="purchase-times-1"><input id="purchase-times-1" type="radio" name="recommendation" value="1" required> 1</label>
+                                    <label class="times-values" for="purchase-times-1"><input id="purchase-times-1" type="radio" name="recommendation" value="1" required tabindex="6"> 1</label>
                                     <label class="times-values" for="purchase-times-2"><input id="purchase-times-2" type="radio" name="recommendation" value="2"> 2</label>
                                     <label class="times-values" for="purchase-times-3"><input id="purchase-times-3" type="radio" name="recommendation" value="2"> 3</label>
                                     <label class="times-values" for="purchase-times-4"><input id="purchase-times-4" type="radio" name="recommendation" value="4"> 4</label>
@@ -97,7 +97,7 @@
                                <div class="date-of-purchase">
                                     <label for="last-purchase" class="last-purchase">When did you do your last purchase? *</label>
                                         <div class="date-box">
-                                            <input type="date" id="last-purchase" name="last-purchase" required>
+                                            <input type="date" id="last-purchase" name="last-purchase" required tabindex="7">
                                         </div>
                                 </div>
                         </fieldset>
@@ -108,11 +108,11 @@
                         <fieldset>
                            <legend class="tag tag-media">What do you like the most about us? (multiple choice allowed)</legend>
                                <div class="liking-boxes">
-                                    <label class="liking-values" for="likings-1"><input id="likings-1" type="checkbox" name="likings" value="Customer Service"> Customer Service</label>
-                                    <label class="liking-values" for="likings-2"><input id="likings-2" type="checkbox" name="likings" value="Pricing"> Pricing</label>
-                                    <label class="liking-values" for="likings-3"><input id="likings-3" type="checkbox" name="likings" value="Shipping Cost"> Shipping Cost</label>
-                                    <label class="liking-values" for="likings-4"><input id="likings-4" type="checkbox" name="likings" value="Website Design"> Website Design</label>
-                                    <label class="liking-values" for="likings-5"><input id="likings-5" type="checkbox" name="likings" value="Insurance Policy"> Insurance Policy</label>
+                                    <label class="liking-values" for="likings-1"><input id="likings-1" type="checkbox" name="likings" value="Customer Service" tabindex="7"> Customer Service</label>
+                                    <label class="liking-values" for="likings-2"><input id="likings-2" type="checkbox" name="likings" value="Pricing" tabindex="8"> Pricing</label>
+                                    <label class="liking-values" for="likings-3"><input id="likings-3" type="checkbox" name="likings" value="Shipping Cost" tabindex="9"> Shipping Cost</label>
+                                    <label class="liking-values" for="likings-4"><input id="likings-4" type="checkbox" name="likings" value="Website Design" tabindex="10"> Website Design</label>
+                                    <label class="liking-values" for="likings-5"><input id="likings-5" type="checkbox" name="likings" value="Insurance Policy" tabindex="11"> Insurance Policy</label>
                                 </div>
                         </fieldset>
                     </div>
@@ -124,7 +124,7 @@
                             <div class="scale">
                          
                                 <div class="range">
-                                    <input type="range" id="recommendation-range" name="vol" min="1" max="10">
+                                    <input type="range" id="recommendation-range" name="vol" min="1" max="10" tabindex="12">
                                 </div>
                          
                                 <div class="numbers">
@@ -146,12 +146,12 @@
                     
                     <div class="comments-box">
                         <label for="comments" class="comments">Please, leave us any comment that you wish so that we can keep improving or business...
-                        <textarea id="comments" placeholder="I really love ACQUISTIONS because... ;-)"></textarea>
+                        <textarea id="comments" placeholder="I really love ACQUISTIONS because... ;-)" tabindex="13"></textarea>
                         </label>
                     </div>
 
 
-                <input id="submit" type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit" tabindex="14">
 
                 <div class="required">            
                     <p>All fields marked with * are required.</p>
