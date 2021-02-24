@@ -484,6 +484,12 @@ footer a:hover {
 }
 
 @media (max-width: 375px) {
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+
   .logo {
     transform: scale(2.5);
     border-bottom: 1px solid white;
