@@ -1,8 +1,8 @@
 /*******************************************/
 /*             My Survey Form              */
 /*          CSS by Ibai Fernández          */
-/*               Version: 1.1              */
-/*        Date: February, 20th 2021        */
+/*               Version: 1.2              */
+/*        Date: February, 23th 2021        */
 /*        Code Journey - Stage #1          */
 /*******************************************/
 
@@ -72,7 +72,7 @@ body {
 
 label {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2vw;
+  font-size: 2vmax;
 }
 
 /*************** Logo *****************/
@@ -190,11 +190,11 @@ fieldset {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 25px;
+  margin: 1vmax;
 }
 
 .times-values {
-  font-size: 1.5rem;
+  font-size: 2vmax;
   padding: 2vh 2vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -202,8 +202,7 @@ fieldset {
 
 .tag {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2vw;
-  margin: 1vh 0;
+  font-size: 2vmax;
 }
 
 .date-of-purchase {
@@ -216,21 +215,15 @@ fieldset {
 }
 
 input[type="date"] {
-  border: 3px solid var(--color-1);
+  border: 1px solid var(--color-1);
   border-radius: 5px;
   color: var(--color-5);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  margin: 20px 0 0 0;
+  margin: 2vmax 0;
   opacity: 0.9;
   padding: 10px;
   width: 100%;
-}
-
-.recommendation-range {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem;
-  margin: 25px 0;
 }
 
 .liking-div {
@@ -244,65 +237,93 @@ input[type="date"] {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  margin: 1vmax 0;
 }
 
 .liking-values {
   font-size: 2vw;
-  margin: 2vh 2vw;
+  margin: 1vmax 1vmax;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
-input[type="checkbox"] {
-}
-
-input[type="range"] {
-  width: 80%;
-  float: left;
-  margin: 40px 15px 20px 15px;
-}
-
 .recommendation {
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vmax 0;
+}
+
+.recommendation-range {
+  display: flex;
+  font-size: 1.25rem;
+  margin: 25px 0;
 }
 
 .recommendation-scale {
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.grade {
-  font-family: "Josefin Sans", sans-serif;
-  width: 25px;
-  float: left;
-  margin: 40px 20px 20px 10px;
+.range {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10px auto;
+}
+
+.numbers p {
+  dsiplay: flex;
+  justify-content: space-between;
+}
+
+.scale {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 40px 15px 20px 15px;
 }
 
 .comments-box {
-  float: left;
+  display: flex;
   margin: 25px 0 0 0;
 }
 
 textarea {
-  width: 90%;
-  border: 3px solid var(--color-1);
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  border: 2px solid var(--color-1);
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1vmax;
   font-weight: 600;
   padding: 10px;
-  margin: 25px 0 25px 0;
+  margin: 2vmax 0;
 }
 
 input[type="submit"] {
+  display: flex;
+  justify-content: center;
   background-color: var(--color-1);
   border: 3px solid var(--color-4);
   border-radius: 5px;
   color: var(--color-5);
-  display: block;
   font-family: "Open Sans", sans-serif;
+  font-size: 1vmax;
   font-weight: 800;
-  margin: 25px auto 25px auto;
+  margin: 15px auto 15px auto;
   padding: 15px;
   width: 20%;
 }
@@ -322,9 +343,10 @@ input[type="submit"]:hover {
 
 .required {
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 2vmin;
   font-weight: 600;
   margin: 0 auto;
+  opacity: 0.5;
   text-align: center;
 }
 
@@ -376,4 +398,121 @@ footer a {
 
 footer a:hover {
   color: white;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 2vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    transform: scale(2);
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+  }
+
+  #description {
+    margin: 0 25px;
+  }
+
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  .form-section-title {
+    margin: 10px 0 0 0;
+  }
+  .user-info-input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vmax;
+  }
+
+  .user-info-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tag-media {
+    margin: -3vmax 0 1vmax 0;
+  }
+
+  .purchase-times {
+    margin: 5px;
+    justify-content: space-around;
+  }
+
+  .last-purchase {
+    margin: 1vmax 0 0 0;
+  }
+
+  .liking-div {
+    margin: 1vmax 0 -2vmax 0;
+  }
+
+  input[type="range"] {
+    margin: 3vmax 0 1vmax 0;
+  }
+
+  .numbers p {
+    font-size: 1vmax;
+  }
+
+  .comments {
+    margin: -2vmax 0 0 0;
+  }
+
+  textarea {
+    width: 90%;
+    margin: 2vmax 0 0 0;
+  }
+
+  .liking-boxes {
+    flex-direction: column;
+  }
+
+  .liking-values {
+    font-size: 2vmax;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    transform: scale(2.5);
+    border-bottom: 1px solid white;
+    margin-bottom: 35px;
+  }
+
+  #description {
+    font-size: 2vmax;
+  }
+
+  .user-info-input-div {
+    width: 35vmax;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  #description {
+    font-size: 2vmax;
+  }
+
+  .user-info-input-div {
+    width: 35vmax;
+  }
+
+  .user-info-input-div {
+    width: 30vmax;
+  }
 }
