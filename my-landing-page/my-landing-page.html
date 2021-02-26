@@ -1,0 +1,333 @@
+<!--
+
+/*******************************************/
+/*             My Landing Page             */
+/*         HTML by Ibai Fernández          */
+/*               Version: 1.0              */
+/*        Date: February, 24th 2021        */
+/*        Code Journey - Stage #1          */
+/*******************************************/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>My Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ibai Fernández">
+        <meta name="description" content="My Landing Page, 3rd project of the Responsive Web Design Course at FCC">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="#">
+        <meta property="og:description" content="My Landing Page, 3rd project of the Responsive Web Design Course at FCC">
+        <meta property="og:title" content="My Landing Page, by Ibai Fernández">
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../my-landing-page/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+        <body>
+            <header id="header">
+                <div class="bar">
+                    <div class="logo-bar">
+                        <a class="logo-link" href="#cta">
+                            <div class="logo-circle"> 
+                                <img id="header-img" class="img-logo" src="../my-landing-page/img/mandala-psychology-logo.png" alt="Mandala Psychology Logo"/>                                 
+                            </div>
+                        </a>
+                    </div>
+                        
+                    <nav id="nav-bar">
+                        <div class="navigation">
+                            <div class="navigation-bar">
+                                <div class="navigation-left">
+                                    <ul>
+                                        <li><a class="nav-link" href="#about-us">About Us</a></li>
+                                        <li><a class="nav-link" href="#our-facilities">Our Facilities</a></li>
+                                    </ul>
+                                </div>
+                                    
+                                <div class="navigation-right">
+                                    <ul class="nav-menu-right">
+                                        <li><a class="nav-link" href="#">Our Therapies</a></li>
+                                        <li><a class="nav-link" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="cta" class="cta">
+                    <div class="cta-feature">
+                        <h1>Happiness That You Deserve</h1>
+                        <p>Affordable, private online counseling</p>
+                        <a href="#"><button class="cta-button">Treat Yourself</button></a>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <section class="mail-div">
+                    <p class="mail-cta">Let us contact you</p>
+                    <p class="mail-cta-description">Join us for the best lessons on happinnes that you'll ever receive</p>
+                    <form action="#">
+                        <div class="userdata">
+                            <div class="username">
+                                <label for="name">
+                                    <input id="name" type="text" placeholder="Your name" required>
+                                </label>
+                            </div>
+                            <div class="usermail">
+                                <label for="mail">
+                                    <input id="mail" type="email" placeholder="Your email" required>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="user-acceptance">
+                            <input id="acceptance" type="checkbox" required>
+                                <label class="acceptance" for="acceptance"> I hereby consent to the <a href="#" target="_blank">terms and conditions</a> and to the <a href="#" target="_blank">privacy policy</a> of this website.</label>
+                        </div>
+                        <input id="submit" class="submit-button" type="submit" value="Submit!">
+                    </form>
+                </section>
+
+                <section id="about-us" class="about-us">
+                    
+                    <h2>About Mandala Psychology</h2>
+                    <p class="subtitle-light">Learn about our leading counseling service</p>
+                    
+                    <div class="about-us-div">
+                        <div class="about-us-feature">
+                            <div class="feature-content">
+                                <div class="feature-icon">
+                                    <img src="img/mandala-psychology-logo.png" alt="">
+
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Top-notch certificated professionals</h3>
+                                    <p>Top-notch certificated professionals who are the best of the best</p>
+                                    <a href="#"><button class="cta-button">Meet our stuff</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-us-feature">
+                            <div class="feature-content">
+                                <div class="feature-icon">
+                                    <img src="img/mandala-psychology-logo.png" alt="">
+
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Meet the best facilities in the world</h3>
+                                    <p>Feel comfortable at the luxury of our stat-of-the-art facilities</p>
+                                    <a href="#our-facilities"><button class="cta-button">See facilities</button></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-us-feature">
+                            <div class="feature-content">
+                                <div class="feature-icon">
+                                    <img src="img/mandala-psychology-logo.png" alt="">
+
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Worldwidely famous certificated therapies</h3>
+                                    <p>Our therapies are so good that they will drive you insane!</p>
+                                    <a href="#our-therapies"><button class="cta-button">Give it a try</button></a>
+
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </section>
+
+                <section id="our-facilities" class="our-facilities">
+            
+                    <div class="our-facilities-header">
+                        <h2>Discover Our Facilities</h2>
+                        <p class="subtitle-dark">Enjoy the view of calm</p>
+                    </div>
+
+                    <div class="our-facilities-left">
+                        
+                        <h3>The Best Facilities Worlwide</h3>
+
+                        <div class="our-facilities-content">
+                            <div class="content-box">
+                                <div class="facilities-feature-icon">
+                                <img src="../my-landing-page/img/mandala-psychology-logo.png">
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <div class="our-facilities-content">
+                            <div class="content-box">
+                                <div class="facilities-feature-icon">
+                                <img src="../my-landing-page/img/mandala-psychology-logo.png" alt="">
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <div class="our-facilities-content">
+                            <div class="content-box">
+                                <div class="facilities-feature-icon">
+                                <img src="../my-landing-page/img/mandala-psychology-logo.png" alt="">
+                            </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="our-facilities-right">
+                        <video width="90%" height="90%" controls loop autoplay muted>
+                            <source src="../my-landing-page/vid/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+
+                    <div class="our-facilities-button">
+                        <a href="#"><button class="cta-button">Visit us</button></a>
+                    </div>
+                </section>
+
+                <section id="our-therapies" class="our-therapies">
+                    <div class="our-therapies-title">
+                        <h2>Therapies to drive you mad</h2>
+                        <p>Everything you've ever thought you could be</p>
+                    </div>
+                    <div class="our-therapies-div">
+                        <div class="our-therapies-box">
+                            <div class="our-therapies-box-img img-1">
+                                <div class="our-therapies-box-img-title">
+                                    <h4>Calm Therapy</h4>
+
+                                </div>
+                            </div>
+                            <div class="our-therapies-box-description">
+                                <p><em>Become the calm personified</em></p>
+                            </div>
+                            <div class="our-therapies-box-features">
+                                <p>Reduce your stress...</p>
+                            </div>
+                            <div class="our-therapies-box-features">
+                                <p>...don't worry...</p>
+                            </div>
+                            <div class="our-therapies-box-features">
+                                <p>...and be happy</p>
+                            </div>
+                            <div class="our-therapies-box-pricing">
+                                <p>$60<sub class="session">/ 1 h.</sub></p>
+                            </div>
+                            <div class="our-therapies-box-notes">
+                                <p>Buy today and get your second session for free.</p>
+                            </div>
+                            <div class="our-therapies-box-button">
+                                <a href="#"><button class="cta-button">Enjoy Calm Therapy</button></a>
+                            </div>
+
+                        </div>
+                        <div class="our-therapies-box">
+                            <div class="our-therapies-box-img img-2">
+                                <div class="our-therapies-box-img-title">
+                                    <h4>Breeze Therapy</h4>
+
+                                </div>
+                            </div>
+                            
+                            <div class="our-therapies-box-description">
+                                <p><em>Slow down your engines</em></p>
+                            </div>
+                            
+                            <div class="our-therapies-box-features">
+                                <p>Can you tell...</p>
+                            </div>
+                            
+                            <div class="our-therapies-box-features">
+                                <p>...what's that...</p>
+                            </div>
+                            
+                            <div class="our-therapies-box-features">
+                                <p>...smell?</p>
+                            </div>
+                            
+                            <div class="our-therapies-box-pricing">
+                                <p>$90<sub class="session">/ 1 h.</sub></p>
+                            </div>
+                            
+                            <div class="our-therapies-box-notes">
+                                <p>Buy today and get your second session for free.</p>
+                            </div>
+                            
+                            <div class="our-therapies-box-button">
+                                <a href="#"><button class="cta-button">Enjoy Breeze Therapy</button></a>
+                            </div>
+
+                        </div>
+                        <div class="our-therapies-box">
+                            <div class="our-therapies-box-img img-3">
+                                <div class="our-therapies-box-img-title">
+                                    <h4>Zen Therapy</h4>
+                                </div>
+                            </div>
+ 
+                            <div class="our-therapies-box-description">
+                                <p><em>Be like water, my friend</em></p>
+                            </div>
+ 
+                            <div class="our-therapies-box-features">
+                                <p>Be like bamboo...</p>
+                            </div>
+ 
+                            <div class="our-therapies-box-features">
+                                <p>...be like a seagull...</p>
+                            </div>
+ 
+                            <div class="our-therapies-box-features">
+                                <p>...be like a penguin.</p>
+                            </div>
+ 
+                            <div class="our-therapies-box-pricing">
+                                <p>$110<sub class="session">/ 1 h.</sub></p>
+                            </div>
+ 
+                            <div class="our-therapies-box-notes">
+                                <p>Buy today and get your second session for free.</p>
+                            </div>
+ 
+                            <div class="our-therapies-box-button">
+                                <a href="#"><button class="cta-button">Enjoy Zen Therapy</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="testimonials">
+
+                </section>
+
+                <section id="contact">
+
+                </section>
+            </main>
+
+            <aside>
+                <div id="whatsapp"><a href="#" target="_blank"><div class="fa fa-whatsapp"></div></a></div>
+            </aside>
+
+            <footer id="footer">
+
+            </footer>
+        </body>
+    </html>
