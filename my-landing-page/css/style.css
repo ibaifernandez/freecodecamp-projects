@@ -8,10 +8,6 @@
 
 /*********** Pending Tasks ******************
 
-Pending task #1: Style Radio Buttons
-Pending task #1: Style Checkboxes
-Pending task #1: Style Range Selector 
-
 ********************************************/
 
 /********** Import Google Fonts ************/
@@ -114,9 +110,9 @@ input:focus {
   background-color: whitesmoke;
   border-radius: 50%;
   display: flex;
-  height: 7.5rem;
+  height: 10vmax;
   justify-content: center;
-  width: 7.5rem;
+  width: 10vmax;
 }
 
 .logo-div img {
@@ -233,7 +229,7 @@ nav {
   background-color: rgba(181, 105, 91, 0.5);
   display: flex;
   justify-content: center;
-  padding: 1vw 2vw;
+  padding: 2vw;
   color: whitesmoke;
   margin: 1vmax auto 0 auto;
   border: 2px solid white;
@@ -241,7 +237,7 @@ nav {
   font-family: "Noto Sans", sans-serif;
   font-size: 1vmax;
   font-weight: 900;
-  width: 12vw;
+  width: 20vw;
 }
 
 .cta-button:hover {
@@ -586,4 +582,18 @@ nav {
 
 #whatsapp:hover {
   animation: logo-link 400ms linear forwards;
+}
+
+@media (max-width: 425px) {
+  .logo-bar {
+    height: 3vh;
+    margin: 3vw 5vw 0 5vw;
+  }
+
+  .logo-circle {
+    display: flex;
+    justify-content: center;
+    width: 14vw;
+    height: 14vw;
+  }
 }
