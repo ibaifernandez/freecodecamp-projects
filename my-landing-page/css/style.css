@@ -137,7 +137,7 @@ nav {
 
 .navigation {
   width: 100%;
-  margin: 1vh 12vw;
+  margin: 1vh 8vw;
 }
 
 .navigation-bar {
@@ -217,7 +217,7 @@ nav {
   width: 50%;
   height: 25vw;
   padding: 5vh;
-  margin: 60vmin 0 0 0;
+  margin: 65vmin 0 0 0;
   text-shadow: 0 0 5px rgba(13, 43, 63, 1);
 }
 
@@ -229,7 +229,7 @@ nav {
   background-color: rgba(181, 105, 91, 0.5);
   display: flex;
   justify-content: center;
-  padding: 2vw;
+  padding: 2vmin;
   color: whitesmoke;
   margin: 1vmax auto 0 auto;
   border: 2px solid white;
