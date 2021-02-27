@@ -82,7 +82,7 @@ label {
 
 input[type="text"],
 input[type="email"] {
-  padding: 1.75vmin;
+  padding: 1.5vmin;
   border-radius: 10px;
   opacity: 0.75;
   width: 25vw;
@@ -295,6 +295,7 @@ form {
 .user-acceptance {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   margin-top: 1vh;
 }
 
@@ -305,7 +306,6 @@ form {
 
 .submit-button {
   display: flex;
-  border: 2px solid white;
   justify-content: center;
   color: whitesmoke;
   font-weight: 900;
@@ -316,7 +316,6 @@ form {
   border-radius: 10px;
   font-family: "Noto Sans", sans-serif;
   font-size: 1vmax;
-  width: 12vw;
 }
 
 .submit-button:hover {
@@ -599,5 +598,63 @@ form {
     justify-content: center;
     width: 14vw;
     height: 14vw;
+  }
+
+  .cta-feature {
+    width: 75vmin;
+    height: 30vw;
+  }
+
+  .cta-feature h1 {
+    font-size: 8vw;
+  }
+
+  .cta-feature p {
+    margin: 1vmax;
+    font-size: 4vw;
+  }
+
+  .cta-button {
+    width: 30vw;
+    padding: 3vmin;
+    font-size: 3vmin;
+  }
+
+  .mail-cta {
+    font-size: 4vmax;
+  }
+
+  .mail-cta-description {
+    font-size: 2vmax;
+    margin: 0 4vmax;
+    text-align: center;
+  }
+
+  .form-div {
+    width: auto;
+  }
+
+  .userdata {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .username,
+  .usermail {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 1.5vmin;
+    border-radius: 10px;
+    opacity: 0.75;
+    margin: 1vh;
+    width: 90%;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .acceptance {
+    font-size: 2vw;
   }
 }
