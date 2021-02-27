@@ -236,9 +236,9 @@ nav {
   border: 2px solid white;
   border-radius: 10px;
   font-family: "Noto Sans", sans-serif;
-  font-size: 1vmax;
+  font-size: 1.25vmax;
   font-weight: 900;
-  width: 20vw;
+  width: 16vw;
 }
 
 .cta-button:hover {
@@ -385,7 +385,7 @@ form {
 }
 
 .feature-text p {
-  margin: 2vh 0 0 0;
+  margin: 2vh 0 4vh 0;
   color: var(--hue2);
   font-size: 1rem;
 }
@@ -394,17 +394,22 @@ form {
   background-color: var(--hue1);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   padding: 5vh 0;
-}
-
-.our-facilities p {
-  font-size: 1rem;
 }
 
 .our-facilities-header {
   text-align: center;
   width: 100%;
   margin: 0 0 5vh 0;
+}
+
+.our-facilities-div {
+  background-color: var(--hue1);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vh 0;
+  width: 100%;
 }
 
 .our-facilities-content {
@@ -529,6 +534,7 @@ form {
   padding: 1vw;
   font-size: 2.5vh;
   font-family: "Akaya Telivigala", sans-serif;
+  margin: 0 0 1vw 0;
 }
 
 .our-therapies-box-features {
@@ -600,6 +606,10 @@ form {
     height: 14vw;
   }
 
+  .nav-link {
+    font-size: 2.5vw;
+  }
+
   .cta-feature {
     width: 75vmin;
     height: 30vw;
@@ -615,9 +625,9 @@ form {
   }
 
   .cta-button {
-    width: 30vw;
+    width: 50vw;
     padding: 3vmin;
-    font-size: 3vmin;
+    font-size: 4vmin;
   }
 
   .mail-cta {
@@ -625,7 +635,7 @@ form {
   }
 
   .mail-cta-description {
-    font-size: 2vmax;
+    font-size: 4vw;
     margin: 0 4vmax;
     text-align: center;
   }
@@ -656,5 +666,78 @@ form {
 
   .acceptance {
     font-size: 2vw;
+  }
+
+  .about-us h2 {
+    font-size: 8vw;
+  }
+
+  .subtitle-light {
+    font-size: 4vw;
+  }
+
+  .about-us-feature {
+    padding: 2vh 6vh;
+  }
+
+  .our-facilities-header h2 {
+    font-size: 8vw;
+  }
+
+  .subtitle-dark {
+    font-size: 4vw;
+  }
+
+  .our-facilities-header {
+    margin: 0 0 2vh 0;
+  }
+
+  .our-facilities-div {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .our-facilities-div h3 {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .our-facilities-left {
+    width: 100%;
+    padding: 2vh;
+  }
+
+  .our-facilities-right {
+    width: 100%;
+  }
+
+  .our-facilities-button {
+    margin: 2vh 0 0 0;
+  }
+
+  .our-therapies-title h2 {
+    font-size: 7vw;
+  }
+
+  .our-therapies-title p {
+    font-size: 3.5vw;
+  }
+
+  .our-therapies-box-img-title {
+    font-size: 8vw;
+  }
+
+  .our-therapies-box-pricing {
+    font-size: 12vw;
+  }
+
+  .our-therapies-box-description {
+    margin: 2vw 0;
+  }
+
+  #whatsapp {
+    font-size: 2rem;
+    width: 6vh;
+    height: 6vh;
   }
 }
