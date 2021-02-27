@@ -213,9 +213,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Akaya Telivigala", sans-serif;
   text-align: center;
-  width: 50%;
+  width: 65vmin;
   height: 25vw;
   padding: 5vh;
   margin: 65vmin 0 0 0;
@@ -224,6 +223,7 @@ nav {
 
 .cta-feature p {
   margin: 2vmax 0;
+  font-family: "Akaya Telivigala", sans-serif;
 }
 
 .cta-button {
