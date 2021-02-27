@@ -786,7 +786,7 @@ textarea {
   animation: logo-link 400ms linear forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 424px) {
   .logo-bar {
     height: 3vh;
     margin: 3vw 5vw 0 5vw;
