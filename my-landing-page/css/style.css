@@ -253,12 +253,13 @@ form {
 .mail-div {
   background-color: var(--hue5);
   border-bottom: 2px solid var(--hue2);
-
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   padding: 2vh 0;
+  font-size: 4vw;
 }
 
 .mail-cta {
@@ -435,6 +436,16 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+video {
+  width: 100%;
 }
 
 .our-facilities-content h3 {
