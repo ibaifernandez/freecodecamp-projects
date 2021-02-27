@@ -233,7 +233,6 @@ nav {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.25vmax;
   font-weight: 900;
-  width: 14vw;
 }
 
 .cta-button:hover {
@@ -253,13 +252,15 @@ form {
 .mail-div {
   background-color: var(--hue5);
   border-bottom: 2px solid var(--hue2);
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   padding: 2vh 0;
   font-size: 4vw;
+}
+.mail-div h2 {
+  text-align: center;
 }
 
 .mail-cta {
@@ -298,6 +299,10 @@ form {
 .acceptance {
   margin-left: 10px;
   font-size: 1.25vw;
+}
+
+.submit-button-div {
+  margin: 3vh 0 0 2vh;
 }
 
 .submit-button {
@@ -383,7 +388,7 @@ form {
 .feature-text p {
   margin: 2vh 0 4vh 0;
   color: var(--hue2);
-  font-size: 1rem;
+  font-size: 2vmin;
 }
 
 .our-facilities {
@@ -690,7 +695,6 @@ video {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   /* background-color: blue; */
 }
@@ -706,8 +710,8 @@ video {
 }
 
 textarea {
-  display: flex;
-  margin: 1vw auto;
+  margin: 1vw;
+  width: 25vw;
   padding: 1.5vmin;
   border-radius: 10px;
   opacity: 0.75;
@@ -815,12 +819,12 @@ textarea {
   }
 
   .cta-feature {
-    width: 75vmin;
     height: 30vw;
+    width: auto;
   }
 
   .cta-feature h1 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .cta-feature p {
@@ -829,9 +833,9 @@ textarea {
   }
 
   .cta-button {
-    width: 50vw;
+    width: 20vw;
     padding: 3vmin;
-    font-size: 4vmin;
+    font-size: 2vmin;
   }
 
   .mail-cta {
@@ -839,7 +843,7 @@ textarea {
   }
 
   .mail-cta-description {
-    font-size: 4vw;
+    font-size: 2vw;
     margin: 0 4vmax;
     text-align: center;
   }
@@ -864,8 +868,16 @@ textarea {
     border-radius: 10px;
     opacity: 0.75;
     margin: 1vh;
-    width: 90%;
+    width: 95%;
     font-family: "Noto Sans", sans-serif;
+  }
+
+  .submit-button-div {
+    margin: 0;
+  }
+
+  .submit-button {
+    font-size: 2vw;
   }
 
   .acceptance {
@@ -873,24 +885,28 @@ textarea {
   }
 
   .about-us h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     text-align: center;
   }
 
   .subtitle-light {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .about-us-feature {
-    padding: 2vh 6vh;
+    padding: 2vh 8vh;
+  }
+
+  .feature-text h3 {
+    font-size: 4vw;
   }
 
   .our-facilities-header h2 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .subtitle-dark {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .our-facilities-header {
@@ -918,6 +934,7 @@ textarea {
 
   .our-facilities-content p {
     margin: 2vh 0 0 0;
+    font-size: 2vmax;
   }
 
   .our-facilities-right {
@@ -930,33 +947,41 @@ textarea {
   }
 
   .our-therapies-title h2 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   .our-therapies-title p {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .our-therapies-box-img-title {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .our-therapies-box-pricing {
-    font-size: 12vw;
+    font-size: 8vw;
   }
 
   .our-therapies-box-description {
     margin: 2vw 0;
   }
 
+  .our-therapies-box-features {
+    font-size: 2.5vmin;
+  }
+
+  .our-therapies-box-notes {
+    font-size: 2vmin;
+  }
+
   .testimonials-title h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     line-height: 5vw;
     margin: 0 0 2vw 0;
   }
 
   .testimonials-title p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .testimonials-div {
@@ -1015,13 +1040,26 @@ textarea {
   }
 
   .contact-info h2 {
-    font-size: 8vw;
-    margin: 2vh 0 0 0;
+    font-size: 6vw;
+    margin: 2vh 0;
   }
 
   .contact-info p {
     font-size: 3vw;
   }
+
+  textarea {
+    width: 95%;
+  }
+
+  .credits {
+    font-size: 2vmin;
+  }
+
+  .web-author {
+    display: flex;
+    flex-direction: column;
+    line-height: 5vmin;
 
   #whatsapp {
     font-size: 2rem;
