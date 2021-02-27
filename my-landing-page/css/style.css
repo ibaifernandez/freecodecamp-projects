@@ -82,10 +82,11 @@ label {
 
 input[type="text"],
 input[type="email"] {
-  padding: 10px;
-  margin: 20px;
+  padding: 1.75vmin;
   border-radius: 10px;
-  width: 60%;
+  opacity: 0.75;
+  width: 25vw;
+  font-family: "Noto Sans", sans-serif;
 }
 
 input:focus {
@@ -244,6 +245,15 @@ nav {
   animation: logo-link 400ms linear forwards;
   cursor: pointer;
 }
+form {
+  display: flex;
+  justify-content: center;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+}
 
 .mail-div {
   background-color: var(--hue5);
@@ -258,56 +268,50 @@ nav {
 
 .mail-cta {
   text-align: center;
+  font-size: 2.5vmax;
   font-family: "Akaya Telivigala", sans-serif;
-  margin: 0 0 2vh 0;
 }
 
 .mail-cta-description {
-  font-size: 1vw;
+  font-size: 1vmax;
   color: whitesmoke;
   text-align: center;
 }
 
 .userdata {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  margin: 2vh 0;
 }
 
 .username {
-  width: 25%;
+  width: 33vw;
 }
 
 .usermail {
-  width: 25%;
+  width: 33vw;
 }
 
 .user-acceptance {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  margin: 0 auto;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  width: 50%;
+  margin-top: 1vh;
 }
 
 .acceptance {
   margin-left: 10px;
+  font-size: 1.25vw;
 }
 
 .submit-button {
-  box-sizing: border-box;
-  width: 10%;
   display: flex;
   border: 2px solid white;
   justify-content: center;
   color: whitesmoke;
   font-weight: 900;
   background-color: var(--hue4);
-  padding: 15px;
-  margin: 3vh auto;
+  padding: 1.5vh;
+  margin: 1vh auto;
   border: 2px solid white;
   border-radius: 10px;
   font-family: "Noto Sans", sans-serif;
