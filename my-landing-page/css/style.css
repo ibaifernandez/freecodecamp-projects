@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 65vmin;
+  width: 95vmin;
   height: 25vw;
   padding: 5vh;
   margin: 65vmin 0 0 0;
@@ -238,7 +238,7 @@ nav {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.25vmax;
   font-weight: 900;
-  width: 16vw;
+  width: 14vw;
 }
 
 .cta-button:hover {
@@ -408,7 +408,6 @@ form {
   background-color: var(--hue1);
   display: flex;
   flex-wrap: wrap;
-  padding: 5vh 0;
   width: 100%;
 }
 
@@ -457,7 +456,6 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 5vh 0 0 0;
 }
 
 .our-therapies {
@@ -707,8 +705,17 @@ form {
     padding: 2vh;
   }
 
+  .content-box {
+    flex-direction: column;
+  }
+
+  .our-facilities-content p {
+    margin: 2vh 0 0 0;
+  }
+
   .our-facilities-right {
     width: 100%;
+    margin: 2vh 0 0 0;
   }
 
   .our-facilities-button {
