@@ -25,7 +25,6 @@
         <link rel="shortcut icon" href="#" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../my-landing-page/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
         <body>
@@ -319,15 +318,69 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
 
-                <section id="testimonials">
+                <section id="testimonials" class="testimonials">
+                    <div class="testimonials-title">
+                        <h2>Get to know our customers</h2>
+                        <p>and learn what they say about us</p>
+                    </div>
+                    <div class="testimonials-div">
+                        <div class="testimonials-box">
+                            <div class="testimonial-pic">
+                                <img src="img/testimonials-1.jpg" alt="Jane Doe">
+                            </div>
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="author">.- Jane Doe</p>
+                            </div>
+                        </div>
 
+                        <div class="testimonials-box-reverse">
+                            <div class="testimonial-text-reverse">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="author">.- John Doe</p>
+                            </div>
+                            <div class="testimonial-pic">
+                                <img src="img/testimonials-2.jpg" alt="John Doe">
+                            </div>
+                            
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="testimonial-pic">
+                                <img src="img/testimonials-3.jpg" alt="Jane Smith">
+                            </div>
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="author">.- Jane Smith</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </section>
 
-                <section id="contact">
+                <section id="contact" class="contact">
+                        <div class="contact-info">
+                            <h2>Contact Us</h2>
+                            <p>What's going on?</p>
+                            <p>Leave us a message and let us get in touch with you.</p>
 
+
+                        </div>
+                        <div class="contact-form-div">   
+                            <form id="contact-form" class="contact-form" action="#">
+                                <label for="contact-form-name">
+                                    <input id="contact-form-name" name="name" type="text" placeholder="Your name" required>
+                                </label>
+                                <label for="contact-form-mail">
+                                    <input id="contact-form-mail" name="mail" type="email" placeholder="Your mail" required>
+                                </label>
+                                <label for="contact-form-message">
+                                    <textarea id="contact-form-message" name="message" type="text" placeholder="Your message" required></textarea>
+                                <input id="contact-form-submit" class="submit-button" type="submit" value="Submit!">
+                            </form>
+                        </div>
                 </section>
             </main>
 
@@ -335,7 +388,26 @@
                 <div id="whatsapp"><a href="#" target="_blank"><div class="fa fa-whatsapp"></div></a></div>
             </aside>
 
-            <footer id="footer">
+            <footer id="footer" class="footer">
+                <div class="footer-div">
+                </div>
+                <div class="credits">
+                    <div class="web-author">
+                        <p>A landing page designed by <a href="https://ibaifernandez.com" target="_blank">Ibai Fernández</a></p>
+                        <ul>
+                            <li><a href="https://ibaifernandez.com" target="_blank" class="fa fa-globe"></a></li>
+                            <li><a href="https://facebook.com/ibaifernandezec" target="_blank" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/ibaifernandezec" target="_blank" class="fa fa-twitter"></a></li>
+                            <li><a href="https://instagram.com/ibaifernandezec" target="_blank" class="fa fa-instagram"></a></li>
+                            <li><a href="https://github.com/ibaifernandez" target="_blank" class="fa fa-github"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCJQHmRknbrALtBupU4Is9pg" target="_blank" class="fa fa-youtube"></a></li>
+                            <li><a href="mailto:info@ibaifernandez.com" target="_blank" class="fa fa-envelope"></a></li>
+                        </ul>
+                    </div>
+                    <div class="code-journey">
+                    <p>Code Journey: Stage #01</p>
+                    </div>
+                </div>
 
             </footer>
         </body>
