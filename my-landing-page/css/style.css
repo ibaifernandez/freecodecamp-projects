@@ -786,7 +786,6 @@ textarea {
   animation: logo-link 400ms linear forwards;
 }
 
-/*
 @media (max-width: 1024px) {
   .logo-bar {
     height: 3vh;
@@ -1019,4 +1018,3 @@ textarea {
     height: 6vh;
   }
 }
-*/
