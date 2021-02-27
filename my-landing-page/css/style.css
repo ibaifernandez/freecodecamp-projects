@@ -1045,7 +1045,8 @@ textarea {
   }
 
   .contact-info p {
-    font-size: 3vw;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   textarea {
@@ -1060,6 +1061,7 @@ textarea {
     display: flex;
     flex-direction: column;
     line-height: 5vmin;
+  }
 
   #whatsapp {
     font-size: 2rem;
