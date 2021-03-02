@@ -141,7 +141,7 @@ hr {
 
 .frame {
   border: 2px solid black;
-  margin: 10px 15px;
+  margin: 10px 15px 30px 15px;
   padding: 10px;
 }
 
@@ -172,4 +172,10 @@ span.green {
   border-bottom: 2px solid black;
   font-style: italic;
   font-size: 0.75rem;
+}
+
+.active {
+  background-color: white;
+  color: black;
+  padding: 2px;
 }

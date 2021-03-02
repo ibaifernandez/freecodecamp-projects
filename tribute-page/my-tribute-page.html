@@ -3,8 +3,8 @@
 /*******************************************/
 /*    A Charles Bukoswki's Tribute Page    */
 /*         HTML by Ibai Fernández          */
-/*               Version: 1.0              */
-/*        Date: February, 19th 2021        */
+/*               Version: 2.0              */
+/*        Date: March, 1st 2021            */
 /*        Code Journey - Stage #1          */
 /*******************************************/
 
@@ -16,19 +16,26 @@
     <head>
         <title>Charles Bukowski's Tribute Page</title>
         <meta charset="UTF-8">
+        <meta name="author" content="Ibai Fernández">
+        <meta name="description" content="Charles Bukowski's Tribute Page, 1st project of the Responsive Web Design Course at FCC, designed by Ibai Fernández">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../my-tribute-page/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta property="og:image" content="../tribute-page/img/Charles-Bukowski-cover.jpg">
+        <meta property="og:description" content="Charles Bukowski's Tribute Page, 1st project of the Responsive Web Design Course at FCC, designed by Ibai Fernández">
+        <meta property="og:title" content="Charles Bukowski's Tribute Page, by Ibai Fernández">
+        <link rel="shortcut icon" href="../tribute-page/img/quote-marks-black.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../tribute-page/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
  
         <header id="header">
+           
             <div class="page-title">
                 <h1 id="title">Charles Bukowski: a tribute</h1>
                 <p>100 years of underground literature</p>
             </div>
+           
             <nav id="nav" class="navigation-list">
                 <ul>
                     <li><a href="#main-facts">Main facts</a></li>
@@ -38,15 +45,16 @@
                     <li><a href="#resources">Resources</a></li>
               </ul>
             </nav>
+       
         </header>
         
         <main id="main">
-            <div id="img-div">
+            <section id="img-div">
                 <figure>
                     <img id="image" src="img/Charles-Bukowski-cover.jpg" alt="Bukowski smoking a cigarette">
                     <figcaption id="img-caption">Charles Bukowski smoking a cigarette in his older years.</figcaption>
                 </figure>
-            </div>
+            </section>
             
             <section id="main-facts" class="feature">
                 <h2>Main facts about Charles Bukowski</h2>
@@ -137,7 +145,7 @@
         
         <aside id="aside">
             <section id="tribute-info" class="rich-snippet">
-                <img class="bio-pic" src="../my-tribute-page/img/Charles-Bukowski-bio.jpg" alt="Charles Bukoskwi, the writer">
+                <img class="bio-pic" src="../tribute-page/img/Charles-Bukowski-bio.jpg" alt="Charles Bukoskwi, the writer">
                 <h2><a id="tribute-link" href="https://en.wikipedia.org/wiki/Charles_Bukowski" target="_blank">Charles Bukowski</a></h2>
                     <ul class="personal-data">
                         <li>Heinrich Karl Bukowski</li>
@@ -279,7 +287,6 @@
             <p>A tribute page designed by <a href="https://ibaifernandez.com" target="_blank">Ibai Fernández</a></p>
             <p>Code Journey: Stage #01</p>
         </footer>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     </body>
 </html>

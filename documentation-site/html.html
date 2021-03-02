@@ -34,7 +34,7 @@
                         <h1>My Documentation Site</h1>
                             <nav class="nav-menu">
                                 <ul class="navigation-list">
-                                    <li class="navigation-list-item">HTML</li>
+                                    <li class="navigation-list-item"><span class="active">HTML</span></li>
                                     <li class="navigation-list-item"><a href="#">CSS</a></li>
                                     <li class="navigation-list-item"><a href="#">CMD</a></li>
                                     <li class="navigation-list-item"><a href="git.html">Git</a></li>
@@ -47,14 +47,13 @@
             <div class="navigator">
                 <nav id="navbar">
                     <header>
-                        <p class="purpose">Welcome to my own documentation site, where I store notes about my <strong>Code Journey</strong></p>
+                        <p class="purpose">HTML — HyperText Markup Language: Notes stored along my <strong>Code Journey</strong>.</p>
                     </header>
                 <ul class="navigator-list">
-                    <li class="navigator-list-item"><a class="nav-link" href="#commenting_HTML">Commenting HTML</a></li>    
-                    <li class="navigator-list-item"><a class="nav-link" href="#alt_attribute_for_images:_best_practices">ALT attribute for images: Best practices</a></li>    
-                    <li class="navigator-list-item"><a class="nav-link" href="#forms:_best_practices">Forms: best practices</a></li>    
-                    <li class="navigator-list-item"><a class="nav-link" href="#coming_soon!">Coming Soon!</a></li>    
-                    <li class="navigator-list-item"><a class="nav-link" href="#coming_very_soon!">Coming Very Soon!</a></li>    
+                    <li class="navigator-list-item"><a class="nav-link" href="#commenting">Commenting <code>html</code></a></li>    
+                    <li class="navigator-list-item"><a class="nav-link" href="#alt-best-practices"><code>alt</code> attribute for images: Best practices</a></li>    
+                    <li class="navigator-list-item"><a class="nav-link" href="#form-best-practices"><code>form</code>s: best practices</a></li>    
+                    <li class="navigator-list-item"><a class="nav-link" href="#reporting-values-from-name">Reporting <code>value</code> from <code>name</code></a></li>    
                 </ul>
                 </nav>
             </div>
@@ -62,14 +61,14 @@
                 <main id="main-doc">
                     <section id="commenting_HTML" class="main-section">
                         <header>
-                            <h3><span id="commenting"></span>Commenting HTML</h3>
+                            <h3><span id="commenting"></span>Commenting <code>html</code></h3>
                         </header>
                         <p>In order to comment HTML, <code>&lt;!--***--&gt;</code> is used -- where <code>***</code> is the comment itself.</p>
                     </section>
 
                     <section id="alt_attribute_for_images:_best_practices" class="main-section">    
                         <header>
-                            <h3><span id="alt-best-practices"></span>ALT attribute for images: Best practices</h3>
+                            <h3><span id="alt-best-practices"></span><code>alt</code> attribute for images: Best practices</h3>
                         </header>
                         <p>Per HTML5 specification, <code>alt</code> text is now considered mandatory.</p>
                         <p>Thus, if the image is <strong>purely decorative</strong>, using an <strong>empty <code>alt</code> attribute</strong> is a best practice.</p>
@@ -78,14 +77,12 @@
                     
                     <section id="forms:_best_practices" class="main-section">
                         <header>
-                            <h3><span id="form-best-practices"></span>Forms: Best practices</h3>
+                            <h3><span id="form-best-practices"></span><code>Form</code>s: Best practices</h3>
                         </header>
 
                         <h4 class="subtitle"><code>Label</code>'s <code>for</code> attribute must match <code>input</code>'s <code>id</code> attribute</h4>
 
-                            <ol>
-                                <li>It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the <code>label</code> and the child <code>input</code> element. For example:</li>
-                            </ol>
+                                <p>It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the <code>label</code> and the child <code>input</code> element. For example:</p>
                                 
                                     <div class="codeblock">
                                         <code>&lt;label for="color">Favorite color?<br>
@@ -104,14 +101,10 @@
                                         </label>
                                     </div>
        
-                                    <hr>
+                                    <h3><span id="reporting-values-from-name"></span>Reporting <code>value</code>s from <code>name</code> on <code>radio</code> buttons, <code>checkboxes</code>, etc.</h4>
 
-                                    <h4 class="subtitle"><code>Name</code>-<code>value</code> pairs for <code>radio</code> buttons, <code>checkboxes</code>, etc.</h4>
-
-                                    <ol start="2">
-                                        <li>Inputs of <code>type="radio"</code> and <code>type="checkbox"</code> report their values from the <code>value</code> attribute in the form: <code>name=value</code>. For example:</li>
-                                    </ol>
-                                    
+                                    <p>Inputs of <code>type="radio"</code> and <code>type="checkbox"</code> report their values from the <code>value</code> attribute in the form: <code>name=value</code>. For example:</p>
+            
                                     <div class="codeblock">
                                         <code>
                                             &lt;label for="color">Favorite color?<br> 
@@ -130,36 +123,11 @@
                                 </article>
                     </section>
 
-                    <section id="coming_soon!" class="main-section">
-                        <header ">
-                            <h3>Coming Soon!</h3>
-                        </header>
-                        <ol>
-                            <li>1</li>
-                            <li>2</li>
-                        </ol>
-                        <p>Coming Soon!</p>
-                        <p>Coming Soon!</p>
-                    </section>
-
-                    <section id="coming_very_soon!" class="main-section">
-                        <header>
-                            <h3>Coming Very Soon!</h3>
-                        </header>
-                        <ol>
-                            <li>1</li>
-                            <li>2</li>
-                        </ol>
-                        <p>Coming Very Soon!</p>
-                        <p>Coming Very Soon!</p>
-                    </section>
                 </main>
 
                 <footer>
                     <small>Designed and curated by <a href="https://ibaifernandez.com" target="_blank">Ibai Fernández</a></small> 
                 </footer>
-
-                <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>     
 
     </body>
 </html>

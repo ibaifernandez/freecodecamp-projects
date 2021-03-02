@@ -1,8 +1,8 @@
 /*******************************************/
 /*    A Charles Bukoswki's Tribute Page    */
 /*          CSS by Ibai Fernández          */
-/*               Version: 1.0              */
-/*        Date: February, 19th 2021        */
+/*               Version: 2.0              */
+/*        Date: March, 1st 2021            */
 /*        Code Journey -- Stage #1         */
 /*******************************************/
 
@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 /********** Standard Elements *************/
@@ -104,6 +105,8 @@ blockquote {
   line-height: 3rem;
   margin: 10px 0;
   padding: 25px;
+  position: relative;
+  top: -50px;
 }
 
 p {
@@ -216,7 +219,7 @@ figure {
 }
 
 .quote-marks {
-  background-image: url(../img/quote-marks.png);
+  background-image: url(../img/quote-marks-black.png);
   height: 100px;
   left: 20px;
   position: relative;
