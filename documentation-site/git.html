@@ -1,0 +1,168 @@
+<!--
+
+/********************************************/
+/*          My Documentation Page           */
+/*                   Git                    */ 
+/*          HTML by Ibai Fernández          */
+/*               Version: 1.0               */
+/*        Date: February, 27th 2021         */
+/*        Code Journey - Stage #1           */
+/********************************************/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>My documentation site</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ibai Fernández">
+        <meta name="description" content="Git Documentation Page, 4th project of the Responsive Web Design Course at FCC">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="#">
+        <meta property="og:description" content="Git Documentation Page, 4th project of the Responsive Web Design Course at FCC">
+        <meta property="og:title" content="Git Documentation Page, by Ibai Fernández">
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../documentation-page/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+                <header>
+                    <div class="header-container">
+                        <h1>My Documentation Site</h1>
+                            <nav>
+                                <ul class="navigation-list">
+                                    <li class="navigation-list-item"><a href="html.html">HTML</a></li>
+                                    <li class="navigation-list-item"><a href="#">CSS</a></li>
+                                    <li class="navigation-list-item"><a href="#">CMD</a></li>
+                                    <li class="navigation-list-item">Git</li>
+                                    <li class="navigation-list-item"><a href="js.html">JavaScript</a></li>
+                                </ul>
+                            </nav>                
+                    </div>             
+                </header>
+
+            <div class="navigator">
+                <ul class="navigator-list">
+                    <li class="navigator-list-item"><a href="#copying">Copying a repository on local</a></li>    
+                    <li class="navigator-list-item"><a href="#create">Create a file</a></li>    
+                    <li class="navigator-list-item"><a href="#check">Check the status</a></li>
+                    <li class="navigator-list-item"><a href="#adding">Adding to the stage list</a></li>    
+                    <li class="navigator-list-item"><a href="#commit">Commiting a file</a></li>    
+                    <li class="navigator-list-item"><a href="#log">Check Git log</a></li>    
+                    <li class="navigator-list-item"><a href="#push">Push you work to GitHub</a></li>    
+                </ul>
+            </div>
+            
+                <main>
+                    <section class="main-section" id="introduction">
+                        <header>
+                            <h2>Git Instructions</h2>
+                        </header>
+                        
+                            <h3><span id="copying"></span>Copying a repository on local</h3>
+                                <ol>
+                                    <li>To copy this repository onto your local machine, select the SSH option and copy the line next to it.</li>
+                                    <li>At local command line, navigate to the storage targetof the project</li>
+                                    <li>Clone your GitHub repository onto local: <code>git clone</code> followed by the URL copied from GitHub</li>
+                                </ol>    
+                                    <p><strong>Example:</strong></p>
+                    
+                                    <div class="codeblock">
+                                        <code>git clone git@github.com:USER-NAME/REPOSITORY-NAME.git.</code>
+                                    </div>
+
+                            <h2>Git Workflow</h2>
+                            
+                            <article>
+                                <h3><span id="create"></span>Create a file</h3>
+                                    <div class="codeblock">
+                                        <code>touch FILE_NAME.FILE_EXTENSION</code>
+                                    </div>
+                                
+                                    <p><strong>Example:</strong></p>
+                                    
+                                    <div class="codeblock">
+                                        <code>touch index.html</code>
+                                    </div>
+                            </article>
+
+                            <article>
+        
+                                <h3><span id="check"></span>Check the status</h3>
+                                    <div class="codeblock">
+                                        <code>git status</code>
+                                    </div>
+
+                                    <ol>
+                                        <li>A <span class="red"><strong>red</strong></span> results means that the file is not <strong>staged</strong> yet.</li>
+                                        <li>A <span class="green"><strong>green</strong></span> results means that the file has been <strong>staged</strong>.</li>
+                                    </ol>
+                            </article>
+
+                            <article>
+
+                                <h3><span id="adding"></span>Adding to the stage list</h3>
+                            
+                                    <ol>
+                                        <li><em>Staging</em> a specific file:</li>
+                                    </ol>
+                
+                                    <div class="codeblock">
+                                        <code>git add FILE_NAME.FILE_EXTENSION</code>
+                                    </div>
+                                    
+                                    <p><strong>Example:</strong></p>
+                                    
+                                    <div class="codeblock">
+                                        <code>git add index.html</code>
+                                   </div>
+
+                                    <ol start="2">
+                                        <li><em>Staging</em> all <em>non-staged</em> files:</li>
+                                    </ol>
+ 
+                                    <div class="codeblock">
+                                        <code>git add .</code>
+                                    </div>
+            
+                                    <p>For more information on the <code>git add</code> command, <a class="link-in-text" href="http://git-scm.com/docs/git-add" target="_blank">visit the official guide</a>.</p>
+                            
+                            </article>
+
+                            <article>
+
+                                <h3><span id="commit"></span>Commiting a file</h3>
+                                    <div class="codeblock">
+                                        <code>git commit -m "<em>explanatory message</em>"</code> 
+                                    </div>    
+                            
+                            </article>
+        
+                            <article>
+    
+                                <h3><span id="log"></span>Check Git log</h3>
+                                    <div class="codeblock">
+                                        <code>git log</code>
+                                    </div>
+                            
+                            </article>
+
+                            <article>
+                                <h3><span id="push"></span>Push your work to GitHub</h3>
+                                <div class="codeblock">
+                                    <code>git push origin main</code>
+                                </div>
+                           
+                            </article>
+                        </section>
+                </main>     
+
+                <footer>
+                    <small>Designed and curated by <a href="https://ibaifernandez.com" target="_blank">Ibai Fernández</a></small> 
+                </footer>
+           <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>     
+    </body>
+</html>
