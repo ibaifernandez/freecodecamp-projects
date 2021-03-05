@@ -321,7 +321,7 @@ footer ul li a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .portfolio-div {
     width: 100%;
   }
