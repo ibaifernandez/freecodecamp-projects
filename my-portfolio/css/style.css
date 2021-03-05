@@ -137,6 +137,7 @@ a {
 
 .personal-information h2 {
   font-size: 2.5vw;
+  margin-bottom: 2rem;
 }
 
 .personal-information p {
@@ -295,6 +296,12 @@ footer ul li a:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  #top-title {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 960px) {
   .contact-info,
   .contact-form,
@@ -311,5 +318,81 @@ footer ul li a:hover {
 
   .cta {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 7vw;
+  }
+
+  #introduction p {
+    font-size: 4vw;
+  }
+
+  #site-title {
+    display: none;
+  }
+  #navbar ul li {
+    padding: 0 2vmin;
+  }
+
+  .personal-information {
+    text-align: left;
+  }
+
+  h2,
+  .personal-information h2 {
+    font-size: 5vw;
+  }
+
+  .contact-info {
+    padding-bottom: 0;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding-top: 0;
+  }
+
+  .contact-info,
+  .contact-form,
+  #contact-form,
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .personal-information {
+    padding: 1rem;
+  }
+
+  footer ul li {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .personal-information {
+    padding: 0.125rem;
+  }
+
+  .contact-info {
+    padding: 1rem 0 0 0;
+  }
+
+  footer ul li {
+    padding: 0 15px;
   }
 }
