@@ -86,7 +86,6 @@ h1 {
 
 h2 {
   font-size: 3.5vw;
-  margin-bottom: 2rem;
 }
 
 a {
@@ -98,7 +97,7 @@ a {
   border-bottom: 5px solid red;
   color: black;
   display: flex;
-  height: 400px;
+  height: 300px;
   justify-content: center;
 }
 
@@ -170,12 +169,18 @@ a {
   flex-wrap: wrap;
   width: 90%;
   justify-content: space-around;
+  margin: 0 0 2rem 0;
 }
 
 .portfolio-items {
   width: 320px;
   height: 190px;
-  margin: 20px;
+  margin: 4rem 0;
+}
+
+.portfolio-items img {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 #contact {
@@ -204,44 +209,29 @@ a {
 }
 
 footer {
-  background-color: var(--color4, #404040);
-  float: left;
+  background-color: black;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 2rem;
   padding: 25px 0;
-  text-align: center;
   width: 100%;
 }
 
 footer ul {
+  display: flex;
   margin: 15px;
 }
 
 footer ul li {
-  display: inline;
   padding: 0 25px 0 25px;
-}
-
-footer ul li a {
-  color: var(--color1, #f2f2f2);
-  text-decoration: none;
+  list-style-type: none;
 }
 
 footer ul li a:hover {
-  color: var(--color3, #737373);
-  text-decoration: none;
   transform: scale(1.5);
-}
-
-footer p {
-  color: var(--color1, #f2f2f2);
-}
-
-footer a {
-  color: var(--color1, #f2f2f2);
-}
-
-footer a:hover {
-  color: var(--color2, #bfbfbf);
 }
 
 @media (max-width: 1280px) {
