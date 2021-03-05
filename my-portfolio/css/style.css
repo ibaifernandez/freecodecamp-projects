@@ -170,6 +170,7 @@ a {
   width: 90%;
   justify-content: space-around;
   margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .portfolio-items {
@@ -185,27 +186,78 @@ a {
 
 #contact {
   display: flex;
-  background-color: purple;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 2rem;
+}
+
+#contact h2 {
+  color: white;
 }
 
 .contact-div {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .contact-info {
-  background-color: violet;
   display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+}
+
+.contact-info p {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.contact-info p span {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.contact-info p a:hover {
+  color: yellow;
 }
 
 .contact-form {
+  padding: 2rem;
   display: flex;
-  height: 500px;
-  background-color: teal;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+  margin: 1rem 0;
+}
+
+input,
+textarea {
+  width: 400px;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#submit {
+  margin-top: 1rem;
+}
+
+#submit:hover {
+  background-color: red;
+  cursor: pointer;
 }
 
 footer {
@@ -240,5 +292,24 @@ footer ul li a:hover {
   }
   .personal-information-div {
     width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .contact-info,
+  .contact-form,
+  #contact-form,
+  input,
+  textarea {
+    width: 90%;
+    align-items: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .cta {
+    text-align: center;
   }
 }
