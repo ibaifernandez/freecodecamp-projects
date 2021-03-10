@@ -14,10 +14,10 @@ With this design, I learned about HTML forms and CSS Flex, as well as animating 
 
 With this design, I deepened in CSS Flex Box and relative units (vw, vh, vmin, vmax) as well as CSS animations.
 
-**4.- A documentation page**
+**4. A documentation page**
 
 With this design, I deepened in CSS positioning.
     
-**4.- A portfolio site **
+**5. A portfolio site**
 
 With this design, I brought together all I've learnt so far.
