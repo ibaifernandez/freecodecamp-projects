@@ -2,7 +2,7 @@
 
 As part of the Responsive Web Design Certification at FreeCodeCamp.org, these are my 5 first HTML-CSS projects.
 
-**1. A tribute page on Charles Bukowski**
+[**1. A tribute page on Charles Bukowski**](https://ibaifernandez.github.io/freecodecamp-projects/tribute-page/ "Google's Homepage")
 
 With this design, I had my first contact with HTML and CSS working with CSS Box and learning to `float` elements.
 
