@@ -6,7 +6,7 @@
 
 .background-movement::before {
   animation: bg-move 5s ease-in-out infinite;
-  background: url(../../survey-form/img/bg.jpg);
+  background: url("../img/bg.jpg");
   background-position: center;
   background-size: cover;
   content: "";
