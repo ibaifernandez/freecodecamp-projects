@@ -40,7 +40,7 @@
 
 body {
   background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: "Righteous", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -67,6 +67,14 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: "Sanchez", serif;
 }
 
 .container {
@@ -315,7 +323,7 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
+  width: 100%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
   width: 95%;
@@ -330,7 +338,7 @@ section {
   width: 87%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 0%;
 }
 
 .stat-title {
@@ -403,7 +411,7 @@ section {
 }
 
 .port-text {
-  padding: 2rem 0;
+  padding: 4rem 0 0 0;
   text-align: center;
 }
 
@@ -444,6 +452,8 @@ section {
   color: var(--color-primary);
   margin-bottom: 1.5rem;
   text-align: center;
+  letter-spacing: 1px;
+
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
@@ -517,7 +527,8 @@ section {
   border-top: 8px solid var(--color-secondary);
 }
 .blogs .blog .blog-text h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
@@ -537,11 +548,17 @@ section {
 }
 .contact-content-con .left-contact {
   flex: 2;
+  font-size:0.8rem;
 }
+.bold {
+  font-weight: bold;
+}
+
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  color: var(--color-secondary)
 }
 .contact-content-con .left-contact p {
   margin: 1rem 0;
@@ -556,6 +573,11 @@ section {
   margin: 0.3rem 0 !important;
   padding: 0 !important;
 }
+
+.contact-content-con .left-contact .contact-info .contact-item p span a:hover{
+  color: var(--color-secondary);
+}
+
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
@@ -564,10 +586,11 @@ section {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
+  color: var(--color-secondary);
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .contact-content-con .left-contact .contact-icon a {
   display: flex;
@@ -622,13 +645,15 @@ section {
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 /*Independed components*/
 .btn-con {
   display: flex;
   align-self: flex-start;
+  letter-spacing: 2px;
+
 }
 
 .main-btn {
@@ -676,6 +701,7 @@ section {
 
 .main-title {
   text-align: center;
+  margin-top:1rem;
 }
 .main-title h2 {
   position: relative;
