@@ -18,6 +18,6 @@ With this design, I deepened in CSS Flex Box and relative units (vw, vh, vmin, v
 
 With this design, I deepened in CSS positioning.
 
-[**5. A portfolio site**](https://ibaifernandez.github.io/freecodecamp-projects/portfolio/index.html)
+[**5. A portfolio site**](https://ibaifernandez.github.io/freecodecamp-projects)
 
 With this design, I brought together all I'd learnt so far.
