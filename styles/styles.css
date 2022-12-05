@@ -395,11 +395,12 @@ p {
 
 #cigarettes-smoked {
   position:relative;
+  background: var(--color-grey-6);
 }
 
 #cigarettes-smoked::before {
   content: "";
-  background: url("/img/Bukowski.jpeg");
+  background: url("./img/Bukowski.jpeg");
   background-position: -256px -70px;
   position: absolute;
   top: 0px;
@@ -411,11 +412,13 @@ p {
 
 #coffee-drunk {
   position:relative;
+  background: var(--color-grey-6);
+
 }
 
 #coffee-drunk::before {
   content: "";
-  background: url("/img/coffee.jpeg") center;
+  background: url("./img/coffee.jpeg") center;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -431,7 +434,7 @@ p {
 
 #happy-puppy::before {
   content: "";
-  background: url("/img/pirata.jpeg") center;
+  background: url("./img/pirata.jpeg") center;
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -448,7 +451,7 @@ p {
 
 #coding::before {
   content: "";
-  background: url("/img/code.jpeg") center;
+  background: url("./img/code.jpeg") center;
   background-size: cover;
   position: absolute;
   top: 0px;
